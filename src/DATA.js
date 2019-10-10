@@ -108,6 +108,7 @@ const DATA = {
             state: "Completed",
             type: "self-assignment",
             source: "https://github.com/angelzbg/ClouderChat",
+            info: "A simple chat application made for Android devices.<br/>Users can create profiles, edit their avatar, add/remove/blocks other users, chat in realtime and send images.",
             video: "https://www.youtube.com/embed/vGCNsD_eeSA"
         },
         {
