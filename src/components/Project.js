@@ -45,7 +45,7 @@ export default class Project extends React.Component {
                         }
                         {
                             this.props.project.hasOwnProperty('video') ?
-                            !this.state.showVideo ? <button className="button" onClick={() => this.setState({showVideo: true})}>Show Video</button>
+                            !this.state.showVideo ? <a href="#video"><button className="button" onClick={() => this.setState({showVideo: true})}>Show Video</button></a>
                             : <button className="button" onClick={() => this.setState({showVideo: false})}>Hide Video</button> : this.props.textOrHtml
                         }
                     </div>
@@ -61,7 +61,7 @@ export default class Project extends React.Component {
 
                 {
                     this.state.showVideo ?
-                    <div className="video-container">
+                    <div className="video-container" id="video">
                         <iframe title={this.props.project.title} width="100%" height="auto" src={this.props.project.video} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     :
