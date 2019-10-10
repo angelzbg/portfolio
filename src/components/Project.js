@@ -61,7 +61,9 @@ export default class Project extends React.Component {
 
                 {
                     this.state.showVideo ?
-                    <iframe title={this.props.project.title} width="100%" height="100%" src={this.props.project.video} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div className="video-container">
+                        <iframe title={this.props.project.title} width="100%" height="auto" src={this.props.project.video} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                     :
                     this.props.textOrHtml
                 }
