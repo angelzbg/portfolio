@@ -55,6 +55,8 @@ import g_cf_3 from "./images/gallery/g_cf_3.png";
 import g_cf_4 from "./images/gallery/g_cf_4.png";
 import g_cf_5 from "./images/gallery/g_cf_5.png";
 import g_cf_6 from "./images/gallery/g_cf_6.png";
+import g_cf_7 from "./images/gallery/g_cf_7.png";
+import g_cf_8 from "./images/gallery/g_cf_8.png";
 
 const DATA = {
 
@@ -98,7 +100,7 @@ const DATA = {
             "add friends and chat in real time.<br/>Administrators/community owners can restrict content and ban users globally/in community.</br>" +
             "Owners can pin posts and change descriptions and avatars of their own communities.<br/>" +
             "Users also can change their avatars and block other users.",
-            gallery: [ g_cf_1, g_cf_2, g_cf_3, g_cf_4, g_cf_5, g_cf_6 ],
+            gallery: [ g_cf_1, g_cf_2, g_cf_3, g_cf_4, g_cf_5, g_cf_6, g_cf_7, g_cf_8 ],
         },
         {
             title: "Clouder Chat",
