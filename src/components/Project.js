@@ -1,4 +1,5 @@
 import React from "react";
+import Gallery from "./Gallery";
 
 export default class Project extends React.Component {
 
@@ -15,7 +16,7 @@ export default class Project extends React.Component {
         
 
         return(
-            <div className="projectInfoWrap" style={{paddingBottom: this.props.project.hasOwnProperty('video') ? "10px" /*0*/ : "10px"}}>
+            <div className="projectInfoWrap" style={{paddingBottom: "10px"}}>
                 <center style={{color: "#f5fff8", fontSize: "24px", textShadow: "0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1)"}}>{this.props.project.title}</center>
                 {/*<br/>
                 <center><div className="projectBigImage"><img src={this.props.project.bigImage} style={{width: "100%", height: "100%", opacity: 0.9}} alt=""/></div></center>
@@ -25,7 +26,11 @@ export default class Project extends React.Component {
                     <font style={{color: "#3dff3d", fontSize: "17px"}}>&#8226; Technologies:</font> <font style={{color: "#e8fff7", fontSize: "17px"}}>|{this.props.project.techs.map(item => " "+item+" |")}</font><br/>
                     <font style={{color: "#3dff3d", fontSize: "17px"}}>&#8226; Sourcecode:</font> <a  target="_blank" rel="noopener noreferrer" href={this.props.project.source} style={{fontSize: "17px", color: "#5ee2ff", fontWeight: "bold", textDecoration: "none"}}> REPOSITORY</a><br/>
                     <font style={{color: "#3dff3d", fontSize: "17px"}}>&#8226; State:</font> <font style={{color: "#e8fff7", fontSize: "17px"}}>{this.props.project.state}</font><br/>
-                    <font style={{color: "#3dff3d", fontSize: "17px"}}>&#8226; About:</font> <font style={{color: "#e8fff7", fontSize: "17px"}} dangerouslySetInnerHTML={{__html: this.props.project.info}} /><br/>
+                    {
+                        this.props.project.hasOwnProperty('info') ?
+                        <font><font style={{color: "#3dff3d", fontSize: "17px"}}>&#8226; About:</font> <font style={{color: "#e8fff7", fontSize: "17px"}} dangerouslySetInnerHTML={{__html: this.props.project.info}} /><br/></font>
+                        : this.props.textOrHtml
+                    }
                 </div>
                 <br/>
 
@@ -49,6 +54,17 @@ export default class Project extends React.Component {
                 }
                 </center>
                 <p style={{clear: "both"}}></p>
+
+                {
+                   this.state.showGallery ? <Gallery images={this.props.project.gallery} /> : this.props.textOrHtml
+                }
+
+                {
+                    this.state.showVideo ?
+                    <iframe title={this.props.project.title} width="100%" height="100%" src={this.props.project.video} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    :
+                    this.props.textOrHtml
+                }
 
 
             </div>

@@ -26,4 +26,4 @@ export default class Footer extends React.Component {
         )
     } // render()
 
-} // About{}
+} // Footer{}

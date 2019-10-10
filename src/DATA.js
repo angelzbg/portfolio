@@ -47,6 +47,15 @@ import icon_sql from "./images/icon_sql.png";
 import icon_sqlite from "./images/icon_sqlite.png";
 import icon_js from "./images/icon_js.png";
 
+// Gallery
+//// Community Forum
+import g_cf_1 from "./images/gallery/g_cf_1.png";
+import g_cf_2 from "./images/gallery/g_cf_2.png";
+import g_cf_3 from "./images/gallery/g_cf_3.png";
+import g_cf_4 from "./images/gallery/g_cf_4.png";
+import g_cf_5 from "./images/gallery/g_cf_5.png";
+import g_cf_6 from "./images/gallery/g_cf_6.png";
+
 const DATA = {
 
     menu: [
@@ -89,9 +98,7 @@ const DATA = {
             "add friends and chat in real time.<br/>Administrators/community owners can restrict content and ban users globally/in community.</br>" +
             "Owners can pin posts and change descriptions and avatars of their own communities.<br/>" +
             "Users also can change their avatars and block other users.",
-            gallery: [],
-            video: "",
-            codesample: ""
+            gallery: [ g_cf_1, g_cf_2, g_cf_3, g_cf_4, g_cf_5, g_cf_6 ],
         },
         {
             title: "Clouder Chat",
@@ -101,7 +108,7 @@ const DATA = {
             state: "Completed",
             type: "self-assignment",
             source: "https://github.com/angelzbg/ClouderChat",
-            info: ""
+            video: "https://www.youtube.com/watch?v=vGCNsD_eeSA"
         },
         {
             title: "Drawing Shapes",
