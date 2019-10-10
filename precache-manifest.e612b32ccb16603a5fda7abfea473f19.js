@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7f6d4937878503e87f3eabe261ec391d",
+    "revision": "f4087bd6785a9fa29aba7c16fb3e5b76",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "219ab0a406e1678f19bf",
+    "revision": "3aadeaad5365744323ff",
     "url": "/portfolio/static/css/2.7c4efcaa.chunk.css"
   },
   {
-    "revision": "52d29f46b4e5b9b86931",
-    "url": "/portfolio/static/css/main.61d600cc.chunk.css"
+    "revision": "aad2d8f7940f5d2c502b",
+    "url": "/portfolio/static/css/main.c7adbcbf.chunk.css"
   },
   {
-    "revision": "219ab0a406e1678f19bf",
-    "url": "/portfolio/static/js/2.e3cb95e7.chunk.js"
+    "revision": "3aadeaad5365744323ff",
+    "url": "/portfolio/static/js/2.1250fe2a.chunk.js"
   },
   {
-    "revision": "52d29f46b4e5b9b86931",
-    "url": "/portfolio/static/js/main.5bd8e643.chunk.js"
+    "revision": "aad2d8f7940f5d2c502b",
+    "url": "/portfolio/static/js/main.659ebd5c.chunk.js"
   },
   {
     "revision": "9821c9659a93692e486a",
@@ -94,6 +94,30 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "58fdaadcc4f37ddb53cd254b66985806",
     "url": "/portfolio/static/media/drawingShapesBig.58fdaadc.png"
+  },
+  {
+    "revision": "7b12f7243f9abe49ad315fc433cbe48c",
+    "url": "/portfolio/static/media/g_cf_1.7b12f724.png"
+  },
+  {
+    "revision": "4f34f66a9db6652dfa9d63de71e4dc30",
+    "url": "/portfolio/static/media/g_cf_2.4f34f66a.png"
+  },
+  {
+    "revision": "67ab3e589006857c22eb2def6fd5c1d5",
+    "url": "/portfolio/static/media/g_cf_3.67ab3e58.png"
+  },
+  {
+    "revision": "4635f0a361f4e49573f19b5349c82928",
+    "url": "/portfolio/static/media/g_cf_4.4635f0a3.png"
+  },
+  {
+    "revision": "bb31b5aecad208d96aa455695861a775",
+    "url": "/portfolio/static/media/g_cf_5.bb31b5ae.png"
+  },
+  {
+    "revision": "c65cb9b039ec2681ee96de1decc0fa05",
+    "url": "/portfolio/static/media/g_cf_6.c65cb9b0.png"
   },
   {
     "revision": "c6f0979c30b33c15be9038f60b5cf093",
