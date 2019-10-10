@@ -97,7 +97,7 @@ const DATA = {
             type: "self-assignment",
             source: "https://github.com/angelzbg/Community-Forum",
             info: "An application where users can create and post in communities, comment, read and vote in real time, save posts and communities, " +
-            "add friends and chat in real time.<br/>Administrators/community owners can restrict content and ban users globally/in community.</br>" +
+            "add friends and chat in realtime.<br/>Administrators/community owners can restrict content and ban users globally/in community.</br>" +
             "Owners can pin posts and change descriptions and avatars of their own communities.<br/>" +
             "Users also can change their avatars and block other users.",
             gallery: [ g_cf_1, g_cf_2, g_cf_3, g_cf_4, g_cf_5, g_cf_6, g_cf_7, g_cf_8 ],
@@ -120,7 +120,9 @@ const DATA = {
             techs: [ 'Android', 'Java' ],
             state: "Completed",
             type: "university assignment (3rd year, 2nd trimester [PU]) - course Computer graphics",
-            source: "https://github.com/angelzbg/DrawingShapes"
+            source: "https://github.com/angelzbg/DrawingShapes",
+            info:
+            ""
         },
         {
             title: "Random Calculator",

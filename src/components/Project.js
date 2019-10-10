@@ -40,7 +40,7 @@ export default class Project extends React.Component {
                     <div className="btn-group-project" style={{align: "center"}}>
                         {
                             this.props.project.hasOwnProperty('gallery') ?
-                            !this.state.showGallery ? <button className="button" onClick={() => this.setState({showGallery: true})}>Show Gallery</button>
+                            !this.state.showGallery ? <a href="#gallery"><button className="button" onClick={() => this.setState({showGallery: true})}>Show Gallery</button></a>
                             : <button className="button" onClick={() => this.setState({showGallery: false})}>Hide Gallery</button> : this.props.textOrHtml
                         }
                         {
@@ -56,7 +56,7 @@ export default class Project extends React.Component {
                 <p style={{clear: "both"}}></p>
 
                 {
-                   this.state.showGallery ? <Gallery images={this.props.project.gallery} /> : this.props.textOrHtml
+                   this.state.showGallery ? <div id="gallery"><Gallery images={this.props.project.gallery} /></div> : this.props.textOrHtml
                 }
 
                 {
