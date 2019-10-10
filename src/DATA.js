@@ -122,7 +122,21 @@ const DATA = {
             type: "university assignment (3rd year, 2nd trimester [PU]) - course Computer graphics",
             source: "https://github.com/angelzbg/DrawingShapes",
             info:
-            ""
+            "Ech student have to create a graphic editor with primitives and vector type. Every OOP planguage is allowed.<br/>"+
+            "The UI for graphic (2D) modelling have to implement the following capabillities:</br>"+
+            " 1. Bulding images from different primitives (vector) - points, segment, polygons, eclipses etc. <b>(3pts)</b><br/>"+
+            " 2. Visualizing of primitives on the base of their characteristics - color, width, opacity etc. <b>(3pts)</b><br/>"+
+            " 3. Indication of a premitive from the image. <b>(4pts)</b><br/>"+
+            " 4. Moving, rotating, scaling etc. of primitives. <b>(3pts)</b><br/>"+
+            " 5. Hierarchical grouping. <b>(5pts)</b><br/>"+
+            " 6. Moving, rotating, scaling etc. of groups. <b>(5pts)</b><br/>"+
+            " 7. Different ways of determingof characteristics - color by name, naming objects etc. <b>(2.5pts)</b><br/>"+
+            " 8. Different ways of operating by the user - with menu, buttons, mouse etc. <b>(2.5pts)</b><br/>"+
+            " 9. Adding, removing, cloning, actualization of elements, grouping, regrouping etc. <b>(2.5pts)</b><br/>"+
+            " 10. Different ways of selecting of elements. <b>(2.5pts)</b><br/>"+
+            " 11. Multi windows. <b>(bonus 5pts)</b><br/>"+
+            " 12. Different ways of reading/saving to an external memory. <b>(10pts)</b><br/>",
+            video: "https://www.youtube.com/embed/ddvuFrqrC8M"
         },
         {
             title: "Random Calculator",
