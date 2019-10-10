@@ -108,7 +108,7 @@ const DATA = {
             state: "Completed",
             type: "self-assignment",
             source: "https://github.com/angelzbg/ClouderChat",
-            video: "https://www.youtube.com/watch?v=vGCNsD_eeSA"
+            video: "https://www.youtube.com/embed/vGCNsD_eeSA"
         },
         {
             title: "Drawing Shapes",
