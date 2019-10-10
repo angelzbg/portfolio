@@ -18,7 +18,7 @@ export default class Footer extends React.Component {
                 </div>
                 
                 <div style={{paddingTop: "15px", color: "#58aedb"}}>
-                    This site is built using ReactJS. Source code can be found <a style={{color: "#75e0d0", fontWeight: "bold", textDecoration: "none"}} href="https://github.com/angelzbg/angelzbg.github.io" target="_blank" rel="noopener noreferrer">here</a>.
+                    This site is built using ReactJS. Source code can be found <a style={{color: "#75e0d0", fontWeight: "bold", textDecoration: "none"}} href="https://github.com/angelzbg/portfolio" target="_blank" rel="noopener noreferrer">here</a>.
                 </div>
 
                 </center>
