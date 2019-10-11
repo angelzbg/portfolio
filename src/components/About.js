@@ -22,7 +22,7 @@ export default class About extends React.Component {
                             <img className="aboutImage" src={this.props.about.avatar} alt=""/>
                         </div>
                         <div className="aboutInfo">
-                            <img src={about_name_age} style={{height:"30px"}} alt=""/> {this.props.about.name}, {new Date().getFullYear()-this.props.about.date}y<br/>
+                            <img src={about_name_age} style={{height:"30px"}} alt=""/> {this.props.about.name}, {new Date().getFullYear()-this.props.about.date}y/o<br/>
                             <img src={about_phone} style={{height:"30px"}} alt=""/> {this.props.about.phone}<br/>
                             <img src={about_email} style={{height:"30px"}} alt=""/> {this.props.about.email}<br/>
                             <img src={about_location} style={{height:"30px"}} alt=""/> {this.props.about.region}<br/>
