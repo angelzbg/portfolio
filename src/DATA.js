@@ -233,7 +233,11 @@ const DATA = {
     about: {
         name: "Angel Zlatanov",
         date: 1996,
-        avatar: avatar
+        region: "Plovdiv",
+        home: "Ustina",
+        phone: "0888861815",
+        avatar: avatar,
+        email: "angel.zlatanovv@gmail.com"
     }
 
 } // DATA{}
