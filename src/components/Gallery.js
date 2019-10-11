@@ -9,10 +9,10 @@ export default class Gallery extends React.Component {
                     this.props.images.map(
                         (item, index) => {
                             return(
-                                <div class="responsive">
-                                    <div class="gallery">
+                                <div className="responsive" key={index+"image"}>
+                                    <div className="gallery">
                                         <a target="_blank" rel="noopener noreferrer" href={item}>
-                                        <img src={item} alt="Cinque Terre" width="600" height="400"/>
+                                        <img src={item} alt="" width="600" height="400"/>
                                         </a>
                                     </div>
                                 </div>
@@ -21,7 +21,7 @@ export default class Gallery extends React.Component {
                     )
                 }
 
-                <div class="clearfix"></div>
+                <div className="clearfix"></div>
             </div>
         )
     } // render()
