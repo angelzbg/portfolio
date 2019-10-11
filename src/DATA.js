@@ -47,7 +47,7 @@ import icon_sql from "./images/icon_sql.png";
 import icon_sqlite from "./images/icon_sqlite.png";
 import icon_js from "./images/icon_js.png";
 
-// Gallery
+// -------------------- Gallery --------------------
 //// Community Forum
 import g_cf_1 from "./images/gallery/g_cf_1.png";
 import g_cf_2 from "./images/gallery/g_cf_2.png";
@@ -57,6 +57,39 @@ import g_cf_5 from "./images/gallery/g_cf_5.png";
 import g_cf_6 from "./images/gallery/g_cf_6.png";
 import g_cf_7 from "./images/gallery/g_cf_7.png";
 import g_cf_8 from "./images/gallery/g_cf_8.png";
+//// Random Calculator
+import RandomCalculator01 from "./images/gallery/RandomCalculator01.png";
+import RandomCalculator02 from "./images/gallery/RandomCalculator02.png";
+import RandomCalculator03 from "./images/gallery/RandomCalculator03.png";
+import RandomCalculator04 from "./images/gallery/RandomCalculator04.png";
+import RandomCalculator05 from "./images/gallery/RandomCalculator05.png";
+import RandomCalculator06 from "./images/gallery/RandomCalculator06.png";
+import RandomCalculator07 from "./images/gallery/RandomCalculator07.png";
+import RandomCalculator08 from "./images/gallery/RandomCalculator08.png";
+import RandomCalculator09 from "./images/gallery/RandomCalculator09.png";
+import RandomCalculator10 from "./images/gallery/RandomCalculator10.png";
+import RandomCalculator11 from "./images/gallery/RandomCalculator11.png";
+//// Onlearn
+import onlearn1 from "./images/gallery/onlearn1.gif";
+import onlearn2 from "./images/gallery/onlearn2.gif";
+//// Path Finder
+import pathFinder1 from "./images/gallery/pathFinder1.png";
+//// Courses Manager
+import cm1 from "./images/gallery/cm1.gif";
+import cm2 from "./images/gallery/cm2.gif";
+import cm3 from "./images/gallery/cm3.gif";
+import cm4 from "./images/gallery/cm4.gif";
+import cm5 from "./images/gallery/cm5.gif";
+//// Camping Shop
+import CampingShop01 from "./images/gallery/CampingShop01.png";
+import CampingShop02 from "./images/gallery/CampingShop02.png";
+import CampingShop03 from "./images/gallery/CampingShop03.png";
+import CampingShop04 from "./images/gallery/CampingShop04.png";
+//// Game List
+import GameList01 from "./images/gallery/GameList01.png";
+import GameList02 from "./images/gallery/GameList02.png";
+import GameList03 from "./images/gallery/GameList03.png";
+import GameList04 from "./images/gallery/GameList04.png";
 
 const DATA = {
 
@@ -145,7 +178,8 @@ const DATA = {
             techs: [ 'Android', 'Java' ],
             state: "Completed",
             type: "university assignment (2nd year, 3rd trimester [PU]) - course Block programming",
-            source: "https://github.com/angelzbg/RandomCalculator"
+            source: "https://github.com/angelzbg/RandomCalculator",
+            gallery: [ RandomCalculator01, RandomCalculator02, RandomCalculator03, RandomCalculator04, RandomCalculator05, RandomCalculator06, RandomCalculator07, RandomCalculator08, RandomCalculator09, RandomCalculator10, RandomCalculator11 ]
         },
         {
             title: "Onlearn",
@@ -154,7 +188,8 @@ const DATA = {
             techs: [ 'Android', 'Java', 'Firebase' ],
             state: "Completed",
             type: "university assignment (3rd year, 2nd trimester [PU]) - course Specialty practice",
-            source: "https://github.com/angelzbg/Onlearn"
+            source: "https://github.com/angelzbg/Onlearn",
+            gallery: [ onlearn1, onlearn2 ]
         },
         {
             title: "Path Finder",
@@ -163,7 +198,8 @@ const DATA = {
             techs: [ 'Java' ],
             state: "Completed",
             type: "university assignment (3rd year, 3rd trimester [PU]) - course AI",
-            source: "https://github.com/angelzbg/PseudoGraphJava"
+            source: "https://github.com/angelzbg/PseudoGraphJava",
+            gallery: [ pathFinder1 ]
         },
         {
             title: "Simple Maze Solver",
@@ -172,7 +208,8 @@ const DATA = {
             techs: [ 'C#' ],
             state: "Completed",
             type: "university assignment (3rd year, 1st trimester [PU]) - course Algorithms and data structures",
-            source: "https://github.com/angelzbg/Maze"
+            source: "https://github.com/angelzbg/Maze",
+            video: "https://www.youtube.com/embed/qVAHV0XYhf0"
         },
         {
             title: "Hangman",
@@ -181,7 +218,8 @@ const DATA = {
             techs: [ 'Spring', 'ReactJS' ],
             state: "Completed",
             type: "university assignment (3rd year, 3rd trimester [PU]) - course Web introduction with Java and JS",
-            source: "https://github.com/angelzbg/Hangman"
+            source: "https://github.com/angelzbg/Hangman",
+            video: "https://www.youtube.com/embed/ShlRlK0_cUk"
         },
         {
             title: "Who Wants to Be a Millionaire?",
@@ -190,7 +228,8 @@ const DATA = {
             techs: [ 'ReactJS' ],
             state: "Completed",
             type: "self-assignment",
-            source: "https://github.com/angelzbg/Who-Wants-to-Be-a-Millionaire/tree/master/whowantstobeamillionaire"
+            source: "https://github.com/angelzbg/Who-Wants-to-Be-a-Millionaire/tree/master/whowantstobeamillionaire",
+            video: "https://www.youtube.com/embed/DaBYg24mg94"
         },
         {
             title: "Courses Manager",
@@ -199,7 +238,8 @@ const DATA = {
             techs: [ 'Java', 'SQL' ],
             state: "Completed",
             type: "university assignment (2nd year, 2nd trimester [PU]) - course Practice OOP & DB",
-            source: "https://github.com/angelzbg/CoursesManager"
+            source: "https://github.com/angelzbg/CoursesManager",
+            gallery: [ cm1, cm2, cm3, cm4, cm5 ]
         },
         {
             title: "Camping Shop",
@@ -208,7 +248,8 @@ const DATA = {
             techs: [ 'Java' ],
             state: "Completed",
             type: "university assignment (2nd year, 2nd trimester [PU]) - course OOP",
-            source: "https://github.com/angelzbg/CampingShop"
+            source: "https://github.com/angelzbg/CampingShop",
+            gallery: [ CampingShop01, CampingShop02, CampingShop03, CampingShop04 ]
         },
         {
             title: "Game List",
@@ -217,7 +258,8 @@ const DATA = {
             techs: [ '.NET' ],
             state: "Completed",
             type: "university assignment (3rd year, 1st trimester [PU]) - course Distributed applications",
-            source: "https://github.com/angelzbg/GameList"
+            source: "https://github.com/angelzbg/GameList",
+            gallery: [ GameList01, GameList02, GameList03, GameList04 ]
         },
         {
             title: "2D Arrays Exercises",
