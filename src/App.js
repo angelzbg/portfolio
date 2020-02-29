@@ -22,7 +22,7 @@ export default class App extends React.Component {
     };
   } // constructor()
 
-  // BrowserRouting doesn't work on guthub pages, this is my workaround!
+  // BrowserRouting doesn't work on guthub pages
   render() {
     return (
       <div className="pageWrap">
@@ -48,9 +48,9 @@ export default class App extends React.Component {
         </center>
         {/* Content [ START ] */}
         {
-          this.state.indexMenu === 0 ? <Projects projects={DATA.projects} tech={DATA.tech}/> :
-          this.state.indexMenu === 1 ? <About about={DATA.about}/> :
-          this.props.textOrHtml
+          this.state.indexMenu === 0 ? <Projects key={this.state.indexMenu+'project'} projects={DATA.projects} tech={DATA.tech}/> :
+          this.state.indexMenu === 1 ? <About about={DATA.about}/>
+          : null
         }
         {/* Content [  END  ] */}
         <center>

@@ -27,9 +27,14 @@ export default class Project extends React.Component {
                     <font style={{color: "#3dff3d", fontSize: "17px"}}>&#8226; Sourcecode:</font> <a  target="_blank" rel="noopener noreferrer" href={this.props.project.source} style={{fontSize: "17px", color: "#5ee2ff", fontWeight: "bold", textDecoration: "none"}}> REPOSITORY</a><br/>
                     <font style={{color: "#3dff3d", fontSize: "17px"}}>&#8226; State:</font> <font style={{color: "#e8fff7", fontSize: "17px"}}>{this.props.project.state}</font><br/>
                     {
+                        this.props.project.hasOwnProperty('url') ?
+                        <span><font style={{color: "#3dff3d", fontSize: "17px"}}>&#8226; Live:</font> <a href={this.props.project.url} target="_blank" rel="noopener noreferrer"><font style={{color: "#99ccff", fontSize: "17px"}}>{this.props.project.url}</font></a><br/></span>
+                        : null
+                    }
+                    {
                         this.props.project.hasOwnProperty('info') ?
                         <font><font style={{color: "#3dff3d", fontSize: "17px"}}>&#8226; About:</font> <font style={{color: "#e8fff7", fontSize: "17px"}} dangerouslySetInnerHTML={{__html: this.props.project.info}} /><br/></font>
-                        : this.props.textOrHtml
+                        : null
                     }
                 </div>
                 <br/>
@@ -41,22 +46,22 @@ export default class Project extends React.Component {
                         {
                             this.props.project.hasOwnProperty('gallery') ?
                             !this.state.showGallery ? <a href="#gallery"><button className="button" onClick={() => this.setState({showGallery: true})}>Show Gallery</button></a>
-                            : <button className="button" onClick={() => this.setState({showGallery: false})}>Hide Gallery</button> : this.props.textOrHtml
+                            : <button className="button" onClick={() => this.setState({showGallery: false})}>Hide Gallery</button> : null
                         }
                         {
                             this.props.project.hasOwnProperty('video') ?
                             !this.state.showVideo ? <a href="#video"><button className="button" onClick={() => this.setState({showVideo: true})}>Show Video</button></a>
-                            : <button className="button" onClick={() => this.setState({showVideo: false})}>Hide Video</button> : this.props.textOrHtml
+                            : <button className="button" onClick={() => this.setState({showVideo: false})}>Hide Video</button> : null
                         }
                     </div>
                     :
-                    this.props.textOrHtml
+                    null
                 }
                 </center>
                 <p style={{clear: "both"}}></p>
 
                 {
-                   this.state.showGallery ? <div id="gallery"><Gallery images={this.props.project.gallery} /></div> : this.props.textOrHtml
+                   this.state.showGallery ? <div id="gallery"><Gallery images={this.props.project.gallery} /></div> : null
                 }
 
                 {
@@ -64,8 +69,7 @@ export default class Project extends React.Component {
                     <div className="video-container" id="video">
                         <iframe title={this.props.project.title} width="100%" height="auto" src={this.props.project.video} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
-                    :
-                    this.props.textOrHtml
+                    : null
                 }
 
 

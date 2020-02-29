@@ -62,7 +62,7 @@ export default class Projects extends React.Component {
                 <div className="projSelectInfo">Select a project to check it's details.}
                 </div>
                 </center>
-                : this.props.textOrHtml
+                : null
             //*/}
 
             <div className="projectsWrap" style={{height: projectsWrapHeight+"vw"}}>
@@ -109,9 +109,9 @@ export default class Projects extends React.Component {
                 this.state.indexProject > -1 /* -1 */ ?
                 <div className="projectBoxWrap">
                     <img  src={icon_close} alt="" style={{width: "18px", height: "18px", position: "absolute", right: "10px", top: "7px", cursor: "pointer"}} onClick={() => this.setState({indexProject: -1})}/>
-                    <Project project={this.props.projects[this.state.indexProject]}/>
+                    <Project project={this.props.projects[this.state.indexProject]} key={'project'+this.state.indexProject}/>
                 </div>
-                : this.props.textOrHtml
+                : null
             }
             </div>
 

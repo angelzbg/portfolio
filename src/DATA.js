@@ -5,6 +5,7 @@ import icon_about_inactive from "./images/icon_about_inactive.png";
 import avatar from "./images/avatar.png";
 
 // Project mini images:
+import tetrisMini from "./images/tetrisMini.png";
 import cfMini from "./images/cfMini.png";
 import clouderChatMini from "./images/clouderChatMini.png";
 import drawingShapesMini from "./images/drawingShapesMini.png";
@@ -20,6 +21,7 @@ import gameListMini from "./images/gameListMini.png";
 import d2Mini from "./images/2dMini.png";
 
 // Project big images:
+import tetrisBig from "./images/tetrisMini.png";
 import cfBig from "./images/cfBig.png";
 import clouderChatBig from "./images/clouderChatBig.png";
 import drawingShapesBig from "./images/drawingShapesBig.png";
@@ -121,6 +123,17 @@ const DATA = {
     },
 
     projects: [
+        {
+            title: "Tetris",
+            image: tetrisMini,
+            bigImage: tetrisBig,
+            techs: [ 'ReactJS' ],
+            state: "Completed",
+            type: "self-assignment",
+            source: "https://github.com/angelzbg/tetris",
+            info: "Custom tetris game",
+            url: "https://angelzbg.github.io/tetris/"
+        },
         {
             title: "Community Forum",
             image: cfMini,
