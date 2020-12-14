@@ -1,0 +1,123 @@
+@-webkit-keyframes dropdown-keyframe-articles {
+  0% {
+    opacity: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%) scaleX(0) scaleY(0);
+            transform: translateX(-50%) scaleX(0) scaleY(0);
+    -webkit-transform-origin: 50% 0% 0px;
+            transform-origin: 50% 0% 0px;
+  }
+  100% {
+    opacity: 1;
+    left: 50%;
+    -webkit-transform: translateX(-50%) scaleX(1) scaleY(1);
+            transform: translateX(-50%) scaleX(1) scaleY(1);
+    -webkit-transform-origin: 50% 0% 0px;
+            transform-origin: 50% 0% 0px;
+  }
+}
+
+@keyframes dropdown-keyframe-articles {
+  0% {
+    opacity: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%) scaleX(0) scaleY(0);
+            transform: translateX(-50%) scaleX(0) scaleY(0);
+    -webkit-transform-origin: 50% 0% 0px;
+            transform-origin: 50% 0% 0px;
+  }
+  100% {
+    opacity: 1;
+    left: 50%;
+    -webkit-transform: translateX(-50%) scaleX(1) scaleY(1);
+            transform: translateX(-50%) scaleX(1) scaleY(1);
+    -webkit-transform-origin: 50% 0% 0px;
+            transform-origin: 50% 0% 0px;
+  }
+}
+
+.articles-dropdown-wrapper {
+  border-top-left-radius: 60%;
+  border-top-right-radius: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation: dropdown-keyframe-articles 0.2s ease-out;
+          animation: dropdown-keyframe-articles 0.2s ease-out;
+}
+
+.articles-dropdown-wrapper .articles-dropdown-menu-wrap .articles {
+  max-height: 50vh;
+}
+
+.articles-dropdown-wrapper .articles-dropdown-menu-wrap .articles .article a {
+  text-decoration: none;
+  color: var(--light);
+}
+
+.articles-dropdown-wrapper .articles-dropdown-menu-wrap .articles .article a .article-wrap {
+  padding: 0.25rem 0.4rem 0.4rem 0.4rem;
+  border-radius: 0.4rem;
+  border: 1px solid transparent;
+}
+
+.articles-dropdown-wrapper .articles-dropdown-menu-wrap .articles .article a .article-wrap:hover {
+  border: 1px solid var(--medium);
+  background-color: var(--medium);
+}
+
+.articles-dropdown-wrapper .articles-dropdown-menu-wrap .articles .article a .article-wrap .info-box {
+  height: 2.4rem;
+}
+
+.articles-dropdown-wrapper .articles-dropdown-menu-wrap .articles .article a .article-wrap .title {
+  width: 20rem;
+  margin-bottom: 0.5rem;
+  color: var(--lightest);
+}
+
+@media screen and (max-width: 360px) {
+  .articles-dropdown-wrapper .articles-dropdown-menu-wrap .articles .article a .article-wrap .title {
+    width: 18rem !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .articles-dropdown-wrapper .articles-dropdown-menu-wrap .articles .article a .article-wrap .title {
+    width: 17rem !important;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .articles-dropdown-wrapper .articles-dropdown-menu-wrap .articles .article a .article-wrap .title {
+    width: 15rem !important;
+  }
+}
+
+.articles-dropdown-wrapper .articles-dropdown-menu-wrap .articles .article a .article-wrap .article-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+@media screen and (max-width: 280px) {
+  .articles-dropdown-wrapper .articles-dropdown-menu-wrap .articles .article a .article-wrap .article-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.articles-dropdown-wrapper .articles-dropdown-menu-wrap .articles .article a .article-wrap .reddit-article-info {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 0.4rem;
+  height: 2.4rem;
+  font-size: 0.75rem;
+  line-height: 1.2rem;
+}
+
+.articles-dropdown-wrapper .articles-dropdown-menu-wrap .articles .article a .article-wrap .reddit-article-info .reddit-mini-icon {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-bottom: 0.1rem;
+}
+/*# sourceMappingURL=articles.css.map */

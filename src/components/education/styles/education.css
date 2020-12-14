@@ -1,0 +1,706 @@
+@-webkit-keyframes softuni-main-link-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes softuni-main-link-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes expand-horizontal-softuni-card-right {
+  0% {
+    opacity: 0.4;
+    -webkit-transform: scaleX(0) scaleY(1);
+            transform: scaleX(0) scaleY(1);
+    -webkit-transform-origin: 0% 0% 0px;
+            transform-origin: 0% 0% 0px;
+  }
+  50% {
+    opacity: 0.4;
+    -webkit-transform: scaleX(0) scaleY(1);
+            transform: scaleX(0) scaleY(1);
+    -webkit-transform-origin: 0% 0% 0px;
+            transform-origin: 0% 0% 0px;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleX(1) scaleY(1);
+            transform: scaleX(1) scaleY(1);
+    -webkit-transform-origin: 0% 0% 0px;
+            transform-origin: 0% 0% 0px;
+  }
+}
+
+@keyframes expand-horizontal-softuni-card-right {
+  0% {
+    opacity: 0.4;
+    -webkit-transform: scaleX(0) scaleY(1);
+            transform: scaleX(0) scaleY(1);
+    -webkit-transform-origin: 0% 0% 0px;
+            transform-origin: 0% 0% 0px;
+  }
+  50% {
+    opacity: 0.4;
+    -webkit-transform: scaleX(0) scaleY(1);
+            transform: scaleX(0) scaleY(1);
+    -webkit-transform-origin: 0% 0% 0px;
+            transform-origin: 0% 0% 0px;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleX(1) scaleY(1);
+            transform: scaleX(1) scaleY(1);
+    -webkit-transform-origin: 0% 0% 0px;
+            transform-origin: 0% 0% 0px;
+  }
+}
+
+@-webkit-keyframes expand-horizontal-softuni-card-left {
+  0% {
+    opacity: 0.4;
+    -webkit-transform: scaleX(0) scaleY(1);
+            transform: scaleX(0) scaleY(1);
+    -webkit-transform-origin: 100% 0% 0px;
+            transform-origin: 100% 0% 0px;
+  }
+  50% {
+    opacity: 0.4;
+    -webkit-transform: scaleX(0) scaleY(1);
+            transform: scaleX(0) scaleY(1);
+    -webkit-transform-origin: 100% 0% 0px;
+            transform-origin: 100% 0% 0px;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleX(1) scaleY(1);
+            transform: scaleX(1) scaleY(1);
+    -webkit-transform-origin: 100% 0% 0px;
+            transform-origin: 100% 0% 0px;
+  }
+}
+
+@keyframes expand-horizontal-softuni-card-left {
+  0% {
+    opacity: 0.4;
+    -webkit-transform: scaleX(0) scaleY(1);
+            transform: scaleX(0) scaleY(1);
+    -webkit-transform-origin: 100% 0% 0px;
+            transform-origin: 100% 0% 0px;
+  }
+  50% {
+    opacity: 0.4;
+    -webkit-transform: scaleX(0) scaleY(1);
+            transform: scaleX(0) scaleY(1);
+    -webkit-transform-origin: 100% 0% 0px;
+            transform-origin: 100% 0% 0px;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleX(1) scaleY(1);
+            transform: scaleX(1) scaleY(1);
+    -webkit-transform-origin: 100% 0% 0px;
+            transform-origin: 100% 0% 0px;
+  }
+}
+
+@-webkit-keyframes dots-opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dots-opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes expand-horizontal-softuni-link-left {
+  0% {
+    opacity: 0.4;
+    -webkit-transform: scaleX(0) scaleY(1);
+            transform: scaleX(0) scaleY(1);
+    -webkit-transform-origin: 0% 0% 0px;
+            transform-origin: 0% 0% 0px;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleX(1.1) scaleY(1);
+            transform: scaleX(1.1) scaleY(1);
+    -webkit-transform-origin: 0% 0% 0px;
+            transform-origin: 0% 0% 0px;
+  }
+}
+
+@keyframes expand-horizontal-softuni-link-left {
+  0% {
+    opacity: 0.4;
+    -webkit-transform: scaleX(0) scaleY(1);
+            transform: scaleX(0) scaleY(1);
+    -webkit-transform-origin: 0% 0% 0px;
+            transform-origin: 0% 0% 0px;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleX(1.1) scaleY(1);
+            transform: scaleX(1.1) scaleY(1);
+    -webkit-transform-origin: 0% 0% 0px;
+            transform-origin: 0% 0% 0px;
+  }
+}
+
+@-webkit-keyframes expand-horizontal-softuni-link-right {
+  0% {
+    opacity: 0.4;
+    -webkit-transform: scaleX(0) scaleY(1);
+            transform: scaleX(0) scaleY(1);
+    -webkit-transform-origin: 100% 0% 0px;
+            transform-origin: 100% 0% 0px;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleX(1.1) scaleY(1);
+            transform: scaleX(1.1) scaleY(1);
+    -webkit-transform-origin: 100% 0% 0px;
+            transform-origin: 100% 0% 0px;
+  }
+}
+
+@keyframes expand-horizontal-softuni-link-right {
+  0% {
+    opacity: 0.4;
+    -webkit-transform: scaleX(0) scaleY(1);
+            transform: scaleX(0) scaleY(1);
+    -webkit-transform-origin: 100% 0% 0px;
+            transform-origin: 100% 0% 0px;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleX(1.1) scaleY(1);
+            transform: scaleX(1.1) scaleY(1);
+    -webkit-transform-origin: 100% 0% 0px;
+            transform-origin: 100% 0% 0px;
+  }
+}
+
+@-webkit-keyframes dropdown-keyframe-softuni-cards {
+  0% {
+    opacity: 0.5;
+    -webkit-transform: scaleX(0) scaleY(0);
+            transform: scaleX(0) scaleY(0);
+    -webkit-transform-origin: 50% 0% 0px;
+            transform-origin: 50% 0% 0px;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleX(1) scaleY(1);
+            transform: scaleX(1) scaleY(1);
+    -webkit-transform-origin: 50% 0% 0px;
+            transform-origin: 50% 0% 0px;
+  }
+}
+
+@keyframes dropdown-keyframe-softuni-cards {
+  0% {
+    opacity: 0.5;
+    -webkit-transform: scaleX(0) scaleY(0);
+            transform: scaleX(0) scaleY(0);
+    -webkit-transform-origin: 50% 0% 0px;
+            transform-origin: 50% 0% 0px;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleX(1) scaleY(1);
+            transform: scaleX(1) scaleY(1);
+    -webkit-transform-origin: 50% 0% 0px;
+            transform-origin: 50% 0% 0px;
+  }
+}
+
+@media (min-width: 280px) {
+  #education {
+    -webkit-transform: scale(0.6, 0.6);
+            transform: scale(0.6, 0.6);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+  }
+  #education .softuni-cards {
+    margin-left: -32%;
+  }
+}
+
+@media (min-width: 320px) {
+  #education {
+    -webkit-transform: scale(0.7, 0.7);
+            transform: scale(0.7, 0.7);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+  }
+  #education .softuni-cards {
+    margin-left: -20%;
+  }
+}
+
+@media (min-width: 360px) {
+  #education {
+    -webkit-transform: scale(0.7, 0.7);
+            transform: scale(0.7, 0.7);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+  }
+  #education .softuni-cards {
+    margin-left: -11.5%;
+  }
+}
+
+@media (min-width: 375px) {
+  #education {
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+  }
+  #education .softuni-cards {
+    margin-left: -8.5%;
+  }
+}
+
+@media (min-width: 393px) {
+  #education {
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+  }
+  #education .softuni-cards {
+    margin-left: -5.7%;
+  }
+}
+
+@media (min-width: 411px) {
+  #education {
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+  }
+  #education .softuni-cards {
+    margin-left: -3%;
+  }
+}
+
+@media (min-width: 480px) {
+  #education {
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+  }
+  #education .softuni-cards {
+    margin-left: 0%;
+  }
+}
+
+@media (min-width: 540px) {
+  #education {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+  }
+  #education .softuni-cards {
+    margin-left: 0%;
+  }
+}
+
+@media (min-width: 768px) {
+  #education {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+  }
+  #education .softuni-cards {
+    margin-left: 0%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #education {
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+  }
+}
+
+@media (min-width: 1920px) {
+  #education {
+    -webkit-transform: scale(1.3, 1.3);
+            transform: scale(1.3, 1.3);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+  }
+}
+
+@media (min-width: 2560px) {
+  #education {
+    -webkit-transform: scale(2.5, 2.5);
+            transform: scale(2.5, 2.5);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+  }
+}
+
+@media (min-width: 4095px) {
+  #education {
+    -webkit-transform: scale(3, 3);
+            transform: scale(3, 3);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+  }
+}
+
+.education-university {
+  display: block;
+  text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+  font-size: 13px;
+  -webkit-animation: softuni-main-link-opacity 1s ease-out;
+          animation: softuni-main-link-opacity 1s ease-out;
+}
+
+.education-university img {
+  display: block;
+  width: 180px;
+  margin-bottom: 0.1rem;
+}
+
+.education-university:hover {
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-box-shadow: 0 1px 4px rgba(31, 139, 255, 0.4), 0 0 5px rgba(31, 139, 255, 0.4);
+  box-shadow: 0 1px 4px rgba(31, 139, 255, 0.4), 0 0 5px rgba(31, 139, 255, 0.4);
+}
+
+.education-university .link-icon {
+  margin-right: 0.3rem;
+  margin-bottom: 0.15rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.softuni-wrapper .softuni-link {
+  display: block;
+  width: 80px;
+  -webkit-animation: softuni-main-link-opacity 0.2s ease-out;
+          animation: softuni-main-link-opacity 0.2s ease-out;
+}
+
+.softuni-wrapper .softuni-link .education-softuni {
+  width: 80px;
+  height: 80px;
+  border-radius: 0.4rem;
+  display: block;
+}
+
+.softuni-wrapper .softuni-link .education-softuni:hover {
+  text-decoration: none;
+  -webkit-box-shadow: 0 1px 4px rgba(248, 158, 73, 0.4), 0 0 5px rgba(248, 158, 73, 0.4);
+  box-shadow: 0 1px 4px rgba(248, 158, 73, 0.4), 0 0 5px rgba(248, 158, 73, 0.4);
+}
+
+.softuni-wrapper .softuni-cards {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 401px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-animation: dropdown-keyframe-softuni-cards 0.3s ease-out;
+          animation: dropdown-keyframe-softuni-cards 0.3s ease-out;
+}
+
+.softuni-wrapper .softuni-cards .softuni-separator {
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  background: #ffa000;
+  background: linear-gradient(335deg, #234465 20%, #ffa000 100%);
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.softuni-wrapper .softuni-cards .softuni-separator .dot {
+  width: 3px;
+  height: 3px;
+  background: white;
+  background: linear-gradient(45deg, white 10%, #e3e3e3 100%);
+  border-radius: 50%;
+  margin-left: -1px;
+  margin-top: 77px;
+  -webkit-box-shadow: 0 1px 4px var(--shadow1), 0 0 40px var(--shadow2);
+  box-shadow: 0 1px 4px var(--shadow1), 0 0 40px var(--shadow2);
+  -webkit-animation: dots-opacity 0.4s ease-out;
+          animation: dots-opacity 0.4s ease-out;
+}
+
+.softuni-wrapper .softuni-cards .softuni-separator .dot:nth-child(1) {
+  margin-top: 63px;
+}
+
+.softuni-wrapper .softuni-cards .softuni-left,
+.softuni-wrapper .softuni-cards .softuni-right {
+  display: inline-block;
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.softuni-wrapper .softuni-cards .softuni-left .softuni-card {
+  margin-bottom: 80px;
+  -webkit-animation: expand-horizontal-softuni-card-left 0.4s linear;
+          animation: expand-horizontal-softuni-card-left 0.4s linear;
+}
+
+.softuni-wrapper .softuni-cards .softuni-left .softuni-card .softuni-info div:nth-child(1) {
+  padding: 4px 6px 0px 4px;
+}
+
+.softuni-wrapper .softuni-cards .softuni-left .softuni-card .softuni-info div:nth-child(1) span:nth-child(1) {
+  float: right;
+}
+
+.softuni-wrapper .softuni-cards .softuni-left .softuni-card .softuni-info div:nth-child(1) span:nth-child(2) {
+  float: left;
+}
+
+.softuni-wrapper .softuni-cards .softuni-left .softuni-card .softuni-info div:nth-child(2) {
+  text-align: left;
+}
+
+.softuni-wrapper .softuni-cards .softuni-left .softuni-card .softuni-info div:nth-child(2) img {
+  margin-left: 4px;
+}
+
+.softuni-wrapper .softuni-cards .softuni-left .softuni-card .softuni-sertificate-card {
+  margin-left: 28px;
+}
+
+.softuni-wrapper .softuni-cards .softuni-left .softuni-card .softuni-cert-link-wrap {
+  margin-left: 201px;
+  -webkit-animation: expand-horizontal-softuni-link-left 0.2s ease-out;
+          animation: expand-horizontal-softuni-link-left 0.2s ease-out;
+}
+
+.softuni-wrapper .softuni-cards .softuni-left .softuni-card .softuni-cert-link-wrap div:nth-child(1) {
+  float: right;
+  padding-right: 8px;
+}
+
+.softuni-wrapper .softuni-cards .softuni-left .softuni-card .softuni-cert-link-wrap div:nth-child(2) {
+  float: left;
+}
+
+.softuni-wrapper .softuni-cards .softuni-right .softuni-card {
+  margin-top: 80px;
+  -webkit-animation: expand-horizontal-softuni-card-right 0.4s linear;
+          animation: expand-horizontal-softuni-card-right 0.4s linear;
+}
+
+.softuni-wrapper .softuni-cards .softuni-right .softuni-card .softuni-info div:nth-child(1) {
+  padding: 4px 4px 0px 6px;
+}
+
+.softuni-wrapper .softuni-cards .softuni-right .softuni-card .softuni-info div:nth-child(1) span:nth-child(1) {
+  float: left;
+}
+
+.softuni-wrapper .softuni-cards .softuni-right .softuni-card .softuni-info div:nth-child(1) span:nth-child(2) {
+  float: right;
+}
+
+.softuni-wrapper .softuni-cards .softuni-right .softuni-card .softuni-info div:nth-child(2) {
+  text-align: right;
+}
+
+.softuni-wrapper .softuni-cards .softuni-right .softuni-card .softuni-info div:nth-child(2) img {
+  margin-right: 4px;
+}
+
+.softuni-wrapper .softuni-cards .softuni-right .softuni-card .softuni-sertificate-card {
+  margin-left: -88px;
+}
+
+.softuni-wrapper .softuni-cards .softuni-right .softuni-card .softuni-cert-link-wrap {
+  -webkit-animation: expand-horizontal-softuni-link-right 0.2s linear;
+          animation: expand-horizontal-softuni-link-right 0.2s linear;
+  margin-left: -161px;
+}
+
+.softuni-wrapper .softuni-cards .softuni-right .softuni-card .softuni-cert-link-wrap div:nth-child(1) {
+  float: left;
+  padding-left: 8px;
+}
+
+.softuni-wrapper .softuni-cards .softuni-right .softuni-card .softuni-cert-link-wrap div:nth-child(2) {
+  float: right;
+}
+
+.softuni-wrapper .softuni-cards .softuni-card {
+  cursor: default;
+  width: 190px;
+  height: 80px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.softuni-wrapper .softuni-cards .softuni-card .softuni-title {
+  position: absolute;
+  background-color: #234465;
+  width: 190px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 25px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.softuni-wrapper .softuni-cards .softuni-card .softuni-info {
+  position: absolute;
+  width: 190px;
+  height: 55px;
+  font-size: 15px;
+  margin-top: 25px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.softuni-wrapper .softuni-cards .softuni-card .softuni-info div:nth-child(1) {
+  clear: both;
+}
+
+.softuni-wrapper .softuni-cards .softuni-card .softuni-info div:nth-child(1) span:nth-child(1) {
+  color: #234465;
+  font-size: 12px;
+}
+
+.softuni-wrapper .softuni-cards .softuni-card .softuni-info div:nth-child(1) span:nth-child(2) {
+  padding: 0 5px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  color: #ffa000;
+  border: 2px solid #ffa000;
+  border-radius: 15px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.softuni-wrapper .softuni-cards .softuni-card .softuni-info div:nth-child(2) {
+  margin-top: 22px;
+  position: absolute;
+  width: 190px;
+}
+
+.softuni-wrapper .softuni-cards .softuni-card .softuni-info div:nth-child(2) img {
+  width: 20px;
+  height: 20px;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));
+}
+
+.softuni-wrapper .softuni-cards .softuni-card .softuni-sertificate-card {
+  width: 60px;
+  height: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  margin-top: 60px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  -webkit-box-shadow: 0px -1px 3px rgba(255, 160, 0, 0.8);
+          box-shadow: 0px -1px 3px rgba(255, 160, 0, 0.8);
+}
+
+.softuni-wrapper .softuni-cards .softuni-card .softuni-cert-link-wrap {
+  display: block;
+  background-color: #ffffff;
+  color: #ffa000;
+  width: 150px;
+  height: 30px;
+  position: absolute;
+  margin-top: 22px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 2px rgba(255, 160, 0, 0.9);
+          box-shadow: 0px 0px 2px rgba(255, 160, 0, 0.9);
+  clear: both;
+}
+
+.softuni-wrapper .softuni-cards .softuni-card .softuni-cert-link-wrap:hover {
+  -webkit-box-shadow: 0px 0px 3px rgba(255, 160, 0, 0.8);
+          box-shadow: 0px 0px 3px rgba(255, 160, 0, 0.8);
+}
+
+.softuni-wrapper .softuni-cards .softuni-card .softuni-cert-link-wrap:hover div:nth-child(1) {
+  text-decoration: underline;
+}
+
+.softuni-wrapper .softuni-cards .softuni-card .softuni-cert-link-wrap div:nth-child(1) {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  font-size: 10px;
+  line-height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.softuni-wrapper .softuni-cards .softuni-card .softuni-cert-link-wrap div:nth-child(2) {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+}
+
+.softuni-wrapper .softuni-cards .softuni-card .softuni-cert-link-wrap div:nth-child(2) .link-icon-cert {
+  width: 16px;
+  height: 16px;
+}
+/*# sourceMappingURL=education.css.map */

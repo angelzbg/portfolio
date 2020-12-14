@@ -1,0 +1,511 @@
+// @keyframes gradient-softuni-separator {
+//   0% {
+//     background-position: 0% 100%;
+//   }
+//   40% {
+//     background-position: 100% 0%;
+//   }
+//   60% {
+//     background-position: 100% 0%;
+//   }
+//   100% {
+//     background-position: 0% 100%;
+//   }
+// }
+
+@keyframes softuni-main-link-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes expand-horizontal-softuni-card-right {
+  0% {
+    opacity: 0.4;
+    transform: scaleX(0) scaleY(1);
+    transform-origin: 0% 0% 0px;
+  }
+  50% {
+    opacity: 0.4;
+    transform: scaleX(0) scaleY(1);
+    transform-origin: 0% 0% 0px;
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+    transform-origin: 0% 0% 0px;
+  }
+}
+
+@keyframes expand-horizontal-softuni-card-left {
+  0% {
+    opacity: 0.4;
+    transform: scaleX(0) scaleY(1);
+    transform-origin: 100% 0% 0px;
+  }
+  50% {
+    opacity: 0.4;
+    transform: scaleX(0) scaleY(1);
+    transform-origin: 100% 0% 0px;
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+    transform-origin: 100% 0% 0px;
+  }
+}
+
+@keyframes dots-opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes expand-horizontal-softuni-link-left {
+  0% {
+    opacity: 0.4;
+    transform: scaleX(0) scaleY(1);
+    transform-origin: 0% 0% 0px;
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1.1) scaleY(1);
+    transform-origin: 0% 0% 0px;
+  }
+}
+
+@keyframes expand-horizontal-softuni-link-right {
+  0% {
+    opacity: 0.4;
+    transform: scaleX(0) scaleY(1);
+    transform-origin: 100% 0% 0px;
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1.1) scaleY(1);
+    transform-origin: 100% 0% 0px;
+  }
+}
+
+@keyframes dropdown-keyframe-softuni-cards {
+  0% {
+    opacity: 0.5;
+    transform: scaleX(0) scaleY(0);
+    transform-origin: 50% 0% 0px;
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+    transform-origin: 50% 0% 0px;
+  }
+}
+
+@media (min-width: 280px) {
+  #education {
+    transform: scale(0.6, 0.6);
+    transform-origin: top center;
+    .softuni-cards {
+      margin-left: -32%;
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  #education {
+    transform: scale(0.7, 0.7);
+    transform-origin: top center;
+    .softuni-cards {
+      margin-left: -20%;
+    }
+  }
+}
+
+@media (min-width: 360px) {
+  #education {
+    transform: scale(0.7, 0.7);
+    transform-origin: top center;
+    .softuni-cards {
+      margin-left: -11.5%;
+    }
+  }
+}
+
+@media (min-width: 375px) {
+  #education {
+    transform: scale(0.8, 0.8);
+    transform-origin: top center;
+    .softuni-cards {
+      margin-left: -8.5%;
+    }
+  }
+}
+
+@media (min-width: 393px) {
+  #education {
+    transform: scale(0.8, 0.8);
+    transform-origin: top center;
+    .softuni-cards {
+      margin-left: -5.7%;
+    }
+  }
+}
+
+@media (min-width: 411px) {
+  #education {
+    transform: scale(0.8, 0.8);
+    transform-origin: top center;
+    .softuni-cards {
+      margin-left: -3%;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  #education {
+    transform: scale(0.8, 0.8);
+    transform-origin: top center;
+    .softuni-cards {
+      margin-left: 0%;
+    }
+  }
+}
+
+@media (min-width: 540px) {
+  #education {
+    transform: scale(1, 1);
+    transform-origin: top center;
+    .softuni-cards {
+      margin-left: 0%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #education {
+    transform: scale(1.1, 1.1);
+    transform-origin: top center;
+    .softuni-cards {
+      margin-left: 0%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  #education {
+    transform: scale(1.2, 1.2);
+    transform-origin: top center;
+  }
+}
+
+@media (min-width: 1920px) {
+  #education {
+    transform: scale(1.3, 1.3);
+    transform-origin: top center;
+  }
+}
+
+@media (min-width: 2560px) {
+  #education {
+    transform: scale(2.5, 2.5);
+    transform-origin: top center;
+  }
+}
+
+@media (min-width: 4095px) {
+  #education {
+    transform: scale(3, 3);
+    transform-origin: top center;
+  }
+}
+
+.education-university {
+  display: block;
+  text-decoration: none;
+  width: fit-content;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+  font-size: 13px;
+  animation: softuni-main-link-opacity 1s ease-out;
+  img {
+    display: block;
+    width: 180px;
+    margin-bottom: 0.1rem;
+  }
+  &:hover {
+    text-decoration: none;
+    color: #ffffff;
+    -webkit-box-shadow: 0 1px 4px rgba(31, 139, 255, 0.4), 0 0 5px rgba(31, 139, 255, 0.4);
+    -moz-box-shadow: 0 1px 4px rgba(31, 139, 255, 0.4), 0 0 5px rgba(31, 139, 255, 0.4);
+    box-shadow: 0 1px 4px rgba(31, 139, 255, 0.4), 0 0 5px rgba(31, 139, 255, 0.4);
+  }
+  .link-icon {
+    margin-right: 0.3rem;
+    margin-bottom: 0.15rem;
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+.softuni-wrapper {
+  &:hover {
+    .softuni-cards {
+      .softuni-separator {
+        //background: linear-gradient(-90deg, #ffa000, #ffffff, #ffa000);
+        //background-size: 400% 400%;
+        //animation: gradient-softuni-separator 10s infinite;
+        .dot {
+          //background: linear-gradient(45deg, #808080, #234465, #808080);
+          //background-size: 400% 400%;
+          //animation: gradient-softuni-separator 5s infinite;
+          //-webkit-box-shadow: 0 1px 4px rgba(248, 158, 73, 0.4), 0 0 5px rgba(248, 158, 73, 0.4);
+          //-moz-box-shadow: 0 1px 4px rgba(248, 158, 73, 0.4), 0 0 5px rgba(248, 158, 73, 0.4);
+          //box-shadow: 0 1px 4px rgba(248, 158, 73, 0.4), 0 0 5px rgba(248, 158, 73, 0.4);
+        }
+      }
+    }
+  }
+  .softuni-link {
+    display: block;
+    width: 80px;
+    animation: softuni-main-link-opacity 0.2s ease-out;
+    .education-softuni {
+      width: 80px;
+      height: 80px;
+      border-radius: 0.4rem;
+      //margin-bottom: 0.1rem;
+      display: block;
+      &:hover {
+        text-decoration: none;
+        -webkit-box-shadow: 0 1px 4px rgba(248, 158, 73, 0.4), 0 0 5px rgba(248, 158, 73, 0.4);
+        -moz-box-shadow: 0 1px 4px rgba(248, 158, 73, 0.4), 0 0 5px rgba(248, 158, 73, 0.4);
+        box-shadow: 0 1px 4px rgba(248, 158, 73, 0.4), 0 0 5px rgba(248, 158, 73, 0.4);
+      }
+    }
+  }
+  .softuni-cards {
+    width: min-content;
+    display: flex;
+    flex-direction: row;
+    width: 401px;
+    height: fit-content;
+    animation: dropdown-keyframe-softuni-cards 0.3s ease-out;
+    .softuni-separator {
+      display: inline-block;
+      width: 1px;
+      height: 100%;
+      background: rgba(255, 160, 0, 1);
+      background: linear-gradient(335deg, rgba(35, 68, 101, 1) 20%, rgba(255, 160, 0, 1) 100%);
+      border-bottom-left-radius: 1px;
+      border-bottom-right-radius: 1px;
+      .dot {
+        width: 3px;
+        height: 3px;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(45deg, rgba(255, 255, 255, 1) 10%, rgba(227, 227, 227, 1) 100%);
+        border-radius: 50%;
+        margin-left: -1px;
+        margin-top: 77px;
+        -webkit-box-shadow: 0 1px 4px var(--shadow1), 0 0 40px var(--shadow2);
+        -moz-box-shadow: 0 1px 4px var(--shadow1), 0 0 40px var(--shadow2);
+        box-shadow: 0 1px 4px var(--shadow1), 0 0 40px var(--shadow2);
+        animation: dots-opacity 0.4s ease-out;
+        &:nth-child(1) {
+          margin-top: 63px;
+        }
+      }
+    }
+    .softuni-left,
+    .softuni-right {
+      display: inline-block;
+      width: 200px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .softuni-left {
+      .softuni-card {
+        margin-bottom: 80px;
+        animation: expand-horizontal-softuni-card-left 0.4s linear;
+        .softuni-info {
+          div:nth-child(1) {
+            padding: 4px 6px 0px 4px;
+            span:nth-child(1) {
+              float: right;
+            }
+            span:nth-child(2) {
+              float: left;
+            }
+          }
+          div:nth-child(2) {
+            text-align: left;
+            img {
+              margin-left: 4px;
+            }
+          }
+        }
+        .softuni-sertificate-card {
+          margin-left: 28px;
+        }
+        .softuni-cert-link-wrap {
+          margin-left: 201px;
+          animation: expand-horizontal-softuni-link-left 0.2s ease-out;
+          div:nth-child(1) {
+            float: right;
+            padding-right: 8px;
+          }
+          div:nth-child(2) {
+            float: left;
+          }
+        }
+      }
+    }
+    .softuni-right {
+      .softuni-card {
+        margin-top: 80px;
+        animation: expand-horizontal-softuni-card-right 0.4s linear;
+        .softuni-info {
+          div:nth-child(1) {
+            padding: 4px 4px 0px 6px;
+            span:nth-child(1) {
+              float: left;
+            }
+            span:nth-child(2) {
+              float: right;
+            }
+          }
+          div:nth-child(2) {
+            text-align: right;
+            img {
+              margin-right: 4px;
+            }
+          }
+        }
+        .softuni-sertificate-card {
+          margin-left: -88px;
+        }
+        .softuni-cert-link-wrap {
+          animation: expand-horizontal-softuni-link-right 0.2s linear;
+          margin-left: -161px;
+          div:nth-child(1) {
+            float: left;
+            padding-left: 8px;
+          }
+          div:nth-child(2) {
+            float: right;
+          }
+        }
+      }
+    }
+    .softuni-card {
+      cursor: default;
+      width: 190px;
+      height: 80px;
+      background-color: #ffffff;
+      border-radius: 4px;
+      .softuni-title {
+        position: absolute;
+        background-color: #234465;
+        width: 190px;
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 25px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+      }
+      .softuni-info {
+        position: absolute;
+        width: 190px;
+        height: 55px;
+        font-size: 15px;
+        margin-top: 25px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        div:nth-child(1) {
+          clear: both;
+          span:nth-child(1) {
+            color: #234465;
+            font-size: 12px;
+          }
+          span:nth-child(2) {
+            padding: 0 5px;
+            width: min-content;
+            color: #ffa000;
+            border: 2px solid #ffa000;
+            border-radius: 15px;
+            font-size: 10px;
+            font-weight: bold;
+          }
+        }
+        div:nth-child(2) {
+          margin-top: 22px;
+          position: absolute;
+          width: 190px;
+          img {
+            width: 20px;
+            height: 20px;
+            -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));
+          }
+        }
+      }
+      .softuni-sertificate-card {
+        width: 60px;
+        height: 20px;
+        object-fit: cover;
+        position: absolute;
+        margin-top: 60px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        box-shadow: 0px -1px 3px rgba(255, 160, 0, 0.8);
+      }
+      .softuni-cert-link-wrap {
+        display: block;
+        background-color: #ffffff;
+        color: #ffa000;
+        width: 150px;
+        height: 30px;
+        position: absolute;
+        margin-top: 22px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 2px rgba(255, 160, 0, 0.9);
+        clear: both;
+        &:hover {
+          box-shadow: 0px 0px 3px rgba(255, 160, 0, 0.8);
+          div:nth-child(1) {
+            text-decoration: underline;
+          }
+        }
+        div:nth-child(1) {
+          display: inline-block;
+          width: 120px;
+          height: 30px;
+          font-size: 10px;
+          line-height: 30px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        div:nth-child(2) {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          line-height: 28px;
+          .link-icon-cert {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+    }
+  }
+}
