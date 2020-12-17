@@ -85,7 +85,7 @@ export default observer(
                     }
                   : { ...{ zIndex: dropdown ? 2 : 0 } }
               }
-              onClick={() => setTip('Home')}
+              onClick={() => setTip(false)}
               onMouseEnter={() => setTip('Home')}
               onMouseLeave={() => setTip(false)}
             />
@@ -101,7 +101,7 @@ export default observer(
                     }
                   : { ...{ zIndex: dropdown ? 2 : 0 } }
               }
-              onClick={() => setTip('Education')}
+              onClick={() => setTip(false)}
               onMouseEnter={() => setTip('Education')}
               onMouseLeave={() => setTip(false)}
             />
