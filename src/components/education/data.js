@@ -48,7 +48,7 @@ const softuni = [
     grade: '6.00',
     certificate: {
       image: cert_mini_softuni_advanced,
-      link: 'https://softuni.bg/certificates/details/90498/96ede5a3',
+      link: 'https://softuni.bg/certificates/details/95150/c625ecd8',
       alt: 'cert_mini_softuni_advanced',
     },
     icons: [icons.nodejs, icons.html, icons.css, icons.firebase],
