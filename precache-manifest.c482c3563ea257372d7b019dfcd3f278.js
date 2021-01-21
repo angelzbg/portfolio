@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "36b40a550bb3487382c98062e31736fd",
+    "revision": "6082329888b5abcb29cbc34aae510d57",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "350e3bdd5a31f06d09d1",
-    "url": "/portfolio/static/css/2.e18a25e7.chunk.css"
+    "revision": "f1ccf93a8a699f38d37c",
+    "url": "/portfolio/static/css/2.87a9c7a2.chunk.css"
   },
   {
-    "revision": "7f0a44c8dbe2f66b0269",
-    "url": "/portfolio/static/css/main.ae6e03f5.chunk.css"
+    "revision": "499ba1cd48bd76d01c76",
+    "url": "/portfolio/static/css/main.9829a446.chunk.css"
   },
   {
-    "revision": "350e3bdd5a31f06d09d1",
-    "url": "/portfolio/static/js/2.a5b4a345.chunk.js"
+    "revision": "f1ccf93a8a699f38d37c",
+    "url": "/portfolio/static/js/2.17cbca67.chunk.js"
   },
   {
-    "revision": "7f0a44c8dbe2f66b0269",
-    "url": "/portfolio/static/js/main.003a70d5.chunk.js"
+    "revision": "499ba1cd48bd76d01c76",
+    "url": "/portfolio/static/js/main.1704c79b.chunk.js"
   },
   {
-    "revision": "9821c9659a93692e486a",
-    "url": "/portfolio/static/js/runtime-main.14a56db7.js"
+    "revision": "0af19ddab4d7ba96563f",
+    "url": "/portfolio/static/js/runtime-main.9c9e76cf.js"
   },
   {
     "revision": "b79d6d6b5d063b2e27e8e093138afc97",
@@ -40,6 +40,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/icon_css.75e4d6d5.png"
   },
   {
+    "revision": "cbf9f9dc591a5f9e699cbf9c83915e6c",
+    "url": "/portfolio/static/media/icon_express.cbf9f9dc.png"
+  },
+  {
     "revision": "2eb4f0891e3ac62e588d81bce705b16b",
     "url": "/portfolio/static/media/icon_firebase.2eb4f089.png"
   },
@@ -56,8 +60,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/icon_javascript.6a4c201c.png"
   },
   {
+    "revision": "22dbb3cb07054860da9902f21882c444",
+    "url": "/portfolio/static/media/icon_mongodb.22dbb3cb.png"
+  },
+  {
     "revision": "55e83371dbf50a5f027b1fe31a054ad3",
     "url": "/portfolio/static/media/icon_nodejs.55e83371.png"
+  },
+  {
+    "revision": "f297dfcd8b3e9215ee862f232d5c9d13",
+    "url": "/portfolio/static/media/icon_react.f297dfcd.png"
   },
   {
     "revision": "8b1f11dacfcfb87a719f672e3a33320c",
