@@ -1,35 +1,36 @@
 import React, { useEffect, useState } from 'react';
 import { observer } from 'mobx-react';
 import './styles/menu.css';
-import { setColorScheme } from '../../utils/themes.js';
+import { setColorScheme } from '../../utils/themes';
 import { Home, BookOpen, FileText, Settings, Moon, Sun, Coffee } from 'react-feather';
-import Articles from '../articles/Articles.js';
+import Articles from '../articles/Articles';
 import { withRouter } from 'react-router-dom';
+import { INextTheme, ISetBlur } from '../../state/Store';
+import { RouteComponentProps } from 'react-router';
+import { contacts } from './data';
+
+type MenuProps = RouteComponentProps & {
+  theme: string;
+  nextTheme: INextTheme;
+  setBlurred: ISetBlur;
+};
 
 export default observer(
-  withRouter(({ theme, nextTheme, setBlurred, location: { pathname } }) => {
-    const [dropdown, setDropdown] = useState(false);
-    const [tip, setTip] = useState(false);
+  withRouter(({ theme, nextTheme, setBlurred, location: { pathname } }: MenuProps) => {
+    const [dropdown, setDropdown] = useState('');
+    const [tip, setTip] = useState('');
     const [isBlur, setBlur] = useState(false);
     const [blurTop, setBlurTop] = useState(0);
     const [blurProf, setBlurProf] = useState(false);
 
     useEffect(() => {
-      if (tip === 'Home') {
-        setDropdown(false);
-        setBlur(false);
-        setBlurred(false);
-      } else if (tip === 'Education') {
-        setDropdown(false);
-        setBlur(false);
-        setBlurred(false);
-      } else if (['Articles', 'Themes'].includes(tip)) {
-        setBlurTop(document.querySelector('.app-wrapper').scrollTop);
+      if (['Articles', 'Themes'].includes(tip)) {
+        setBlurTop(document.querySelector('.app-wrapper')!.scrollTop);
         setDropdown(tip);
         setBlur(true);
         setBlurred(true);
       } else {
-        setDropdown(false);
+        setDropdown('');
         setBlur(false);
         setBlurred(false);
       }
@@ -37,7 +38,7 @@ export default observer(
 
     useEffect(() => {
       if (blurProf) {
-        setBlurTop(document.querySelector('.app-wrapper').scrollTop);
+        setBlurTop(document.querySelector('.app-wrapper')!.scrollTop);
         setBlurred(true);
       } else {
         setBlurred(false);
@@ -56,13 +57,7 @@ export default observer(
             <div className="name">Angel Zlatanov</div>
             <div className="separator" />
             <div className="contacts-wrap">
-              {[
-                { href: 'https://www.facebook.com/angel.zlatanovv', ext: true },
-                { href: 'https://www.linkedin.com/in/angel-zlatanov-9379ba1ba/', ext: true },
-                { href: 'https://github.com/angelzbg', ext: true },
-                { href: 'https://stackoverflow.com/users/14342112/angel-zlatanov?tab=profile', ext: true },
-                { href: 'mailto:angel.zlatanovv@gmail.com', ext: false },
-              ].map(({ href, ext }, i) => (
+              {contacts.map(({ href, ext }, i) => (
                 <a key={`prof-link-${i}`} href={href} target={ext ? '_blank' : '_self'} rel="noopener noreferrer">
                   <div />
                 </a>
@@ -73,10 +68,10 @@ export default observer(
         {blurProf && <div className="blurProf" style={{ top: `calc(-1rem + ${blurTop}px)` }} />}
 
         {tip && <div className="menu-icon-tip">{tip}</div>}
-        <div className="menu-wrapper" onMouseLeave={() => setTip(false)}>
+        <div className="menu-wrapper" onMouseLeave={() => setTip('')}>
           <a href="#/">
             <Home
-              tip="Home"
+              //tip="Home"
               className={`icon-menu${pathname === '/' && (!tip || tip === 'Home') ? ' active' : ''}`}
               style={
                 tip === 'Home'
@@ -85,14 +80,14 @@ export default observer(
                     }
                   : { ...{ zIndex: dropdown ? 2 : 0 } }
               }
-              onClick={() => setTip(false)}
+              onClick={() => setTip('')}
               onMouseEnter={() => setTip('Home')}
-              onMouseLeave={() => setTip(false)}
+              onMouseLeave={() => setTip('')}
             />
           </a>
           <a href="#/education">
             <BookOpen
-              tip="Education"
+              //tip="Education"
               className={`icon-menu${pathname === '/education' && (!tip || tip === 'Education') ? ' active' : ''}`}
               style={
                 tip === 'Education'
@@ -101,19 +96,19 @@ export default observer(
                     }
                   : { ...{ zIndex: dropdown ? 2 : 0 } }
               }
-              onClick={() => setTip(false)}
+              onClick={() => setTip('')}
               onMouseEnter={() => setTip('Education')}
-              onMouseLeave={() => setTip(false)}
+              onMouseLeave={() => setTip('')}
             />
           </a>
           <div
             style={{ display: 'inline-block', borderRadius: '50%' }}
             onMouseEnter={() => setTip('Articles')}
-            onMouseLeave={() => setTip(false)}
+            onMouseLeave={() => setTip('')}
           >
             <FileText
               onClick={() => setTip('Articles')}
-              tip="Articles"
+              //tip="Articles"
               className="icon-menu"
               style={
                 tip === 'Articles'
@@ -126,11 +121,11 @@ export default observer(
           <div
             style={{ display: 'inline-block', borderRadius: '50%' }}
             onMouseEnter={() => setTip('Themes')}
-            onMouseLeave={() => setTip(false)}
+            onMouseLeave={() => setTip('')}
           >
             <Settings
               onClick={() => setTip('Themes')}
-              tip="Themes"
+              //tip="Themes"
               className="icon-menu"
               style={
                 tip === 'Themes'
@@ -151,7 +146,7 @@ export default observer(
                     onMouseEnter={() => setColorScheme(name)}
                     onClick={() => {
                       nextTheme(name);
-                      setTip(false);
+                      setTip('');
                     }}
                   >
                     {icon()}

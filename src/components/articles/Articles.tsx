@@ -1,8 +1,8 @@
 import React from 'react';
 import './styles/articles.css';
-import RedditArticle from './components/RedditArticle.js';
+import RedditArticle from './components/RedditArticle';
 
-export default ({ isOpen }) => (
+export default ({ isOpen }: { isOpen: boolean }) => (
   <div className="dropdown-menu-wrapper articles-dropdown-wrapper" style={{ display: isOpen ? 'block' : 'none' }}>
     <div className="dropdown-menu-wrap articles-dropdown-menu-wrap">
       <div className="articles scrollbar">

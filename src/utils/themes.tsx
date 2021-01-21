@@ -1,4 +1,10 @@
-const colors = {
+interface IColor {
+  [key: string]: {
+    [key: string]: string;
+  };
+}
+
+const colors: IColor = {
   Dark: {
     '--lightest': '#e4e6eb',
     '--light': '#b0b3b8',
@@ -48,12 +54,12 @@ const fallback = themes[0];
 
 const getTheme = () => {
   const theme = localStorage.getItem('theme');
-  return colors[theme] ? theme : fallback;
+  return theme && colors[theme] ? theme : fallback;
 };
 
-const saveTheme = (theme = fallback) => localStorage.setItem('theme', theme);
+const saveTheme = (theme: string = fallback) => localStorage.setItem('theme', theme);
 
-const setColorScheme = (theme = fallback) => {
+const setColorScheme = (theme: string = fallback) => {
   Object.entries(colors[theme]).forEach(([color, value]) => {
     document.documentElement.style.setProperty(color, value);
   });
@@ -62,7 +68,7 @@ const setColorScheme = (theme = fallback) => {
 const setTheme = (() => {
   setColorScheme(getTheme());
 
-  return (theme) => {
+  return (theme: string) => {
     theme = colors[theme] ? theme : fallback;
     setColorScheme(theme);
     saveTheme(theme);

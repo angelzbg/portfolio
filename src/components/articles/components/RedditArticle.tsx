@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import redditico from '../../../images/redditico.png';
 import { ArrowUp, MessageSquare } from 'react-feather';
 
-export default ({ url }) => {
+const redditico = require('../../../images/redditico.png');
+
+export default ({ url }: { url: string }) => {
   const [title, setTitle] = useState('');
   const [sub, setSub] = useState('r/');
   const [author, setAuthor] = useState('author');
@@ -26,7 +27,9 @@ export default ({ url }) => {
           setComments(num_comments);
         }
       });
-    return () => (isMounted = false);
+    return () => {
+      isMounted = false;
+    };
   }, [url]);
 
   return (

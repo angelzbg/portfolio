@@ -1,14 +1,23 @@
-import icon_nodejs from '../../images/icon_nodejs.png';
-import icon_javascript from '../../images/icon_javascript.png';
-import icon_css from '../../images/icon_css.png';
-import icon_html from '../../images/icon_html.png';
-import icon_github from '../../images/icon_github.png';
-import icon_firebase from '../../images/icon_firebase.png';
-import cert_mini_softuni_basics from '../../images/cert_mini_softuni_basics.png';
-import cert_mini_softuni_fundamentals from '../../images/cert_mini_softuni_fundamentals.png';
-import cert_mini_softuni_advanced from '../../images/cert_mini_softuni_advanced.png';
+const icon_nodejs = require('../../images/icon_nodejs.png');
+const icon_javascript = require('../../images/icon_javascript.png');
+const icon_css = require('../../images/icon_css.png');
+const icon_html = require('../../images/icon_html.png');
+const icon_github = require('../../images/icon_github.png');
+const icon_firebase = require('../../images/icon_firebase.png');
+const icon_express = require('../../images/icon_express.png');
+const icon_mongodb = require('../../images/icon_mongodb.png');
+const icon_reactjs = require('../../images/icon_react.png');
+const cert_mini_softuni_basics = require('../../images/cert_mini_softuni_basics.png');
+const cert_mini_softuni_fundamentals = require('../../images/cert_mini_softuni_fundamentals.png');
+const cert_mini_softuni_advanced = require('../../images/cert_mini_softuni_advanced.png');
 
-const icons = {
+export interface ISoftuniIcon {
+  icon: any;
+  title: string;
+  alt: string;
+}
+
+export const icons: { [key: string]: ISoftuniIcon } = {
   nodejs: {
     icon: icon_nodejs,
     title: 'NodeJS',
@@ -39,9 +48,48 @@ const icons = {
     title: 'Firebase as BaaS & Auth Provider & Non-Relational Databases',
     alt: 'firebase icon',
   },
+  express: {
+    icon: icon_express,
+    title: 'Express',
+    alt: 'express icon',
+  },
+  mongodb: {
+    icon: icon_mongodb,
+    title: 'MongoDB & Mongoose',
+    alt: 'firebase icon',
+  },
+  reactjs: {
+    icon: icon_reactjs,
+    title: 'ReactJS',
+    alt: 'reactjs icon',
+  },
 };
 
-const softuni = [
+export interface ISoftuniCourse {
+  name: string;
+  date: string;
+  grade: string;
+  certificate?: {
+    image: any;
+    link: string;
+    alt: string;
+  };
+  icons?: ISoftuniIcon[];
+}
+
+export const softuni: ISoftuniCourse[] = [
+  {
+    name: 'ReactJS',
+    date: 'March 2021',
+    grade: '?.??',
+    icons: [icons.reactjs],
+  },
+  {
+    name: 'JS Back-End',
+    date: 'January 2021',
+    grade: '?.??',
+    icons: [icons.nodejs, icons.express, icons.mongodb],
+  },
   {
     name: 'JavaScript Applications',
     date: 'October 2020',
@@ -87,5 +135,3 @@ const softuni = [
     icons: [icons.javascript],
   },
 ];
-
-export { softuni };
