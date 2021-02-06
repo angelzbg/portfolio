@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { ArrowUp, MessageSquare } from 'react-feather';
 
-const redditico = require('../../../images/redditico.png');
+import redditico from '../../../images/redditico.png';
 
-export default ({ url }: { url: string }) => {
+const RedditArticle = ({ url }: { url: string }) => {
   const [title, setTitle] = useState('');
   const [sub, setSub] = useState('r/');
   const [author, setAuthor] = useState('author');
@@ -57,3 +57,5 @@ export default ({ url }: { url: string }) => {
     </div>
   );
 };
+
+export default RedditArticle;

@@ -1,7 +1,7 @@
-import React from 'react';
+//import React from 'react';
 //import { observer } from 'mobx-react';
 
-export default /*observer(*/ () => {
+const Home = /*observer(*/ () => {
   return (
     <>
       <div className="card-home">
@@ -10,3 +10,5 @@ export default /*observer(*/ () => {
     </>
   );
 }; //);
+
+export default Home;

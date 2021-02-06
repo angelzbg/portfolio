@@ -1,7 +1,7 @@
-import React from 'react';
+//import React from 'react';
 import './styles/forms.css';
 
-export default ({ count }: { count: number }) => (
+const FormsBackground = ({ count }: { count: number }) => (
   <div className="area">
     <div className="circles">
       {new Array(count || 10).fill(0).map((x, i) => (
@@ -10,3 +10,5 @@ export default ({ count }: { count: number }) => (
     </div>
   </div>
 );
+
+export default FormsBackground;

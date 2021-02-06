@@ -6,7 +6,7 @@ import Menu from './components/menu/Menu';
 import Home from './components/home/Home';
 import Education from './components/education/Education';
 import { observer } from 'mobx-react';
-import { IStore } from './state/Store';
+import { useStore } from './state/state';
 
 declare global {
   namespace JSX {
@@ -16,15 +16,19 @@ declare global {
   }
 }
 
-export default observer(({ store }: { store: IStore }) => (
-  <HashRouter>
-    <div className="app-wrapper" style={store.isBlur ? { overflow: 'hidden', paddingRight: '0.25rem' } : {}}>
-      <FormsBackground count={10} />
-      <Menu theme={store.theme} nextTheme={store.nextTheme} setBlurred={store.setBlur} />
-      <div className="app-content">
-        <Route exact path="/" component={Home} />
-        <Route path="/education" component={Education} />
+export default observer(() => {
+  const store = useStore();
+
+  return (
+    <HashRouter>
+      <div className="app-wrapper" style={store.isBlur ? { overflow: 'hidden', paddingRight: '0.25rem' } : {}}>
+        <FormsBackground count={10} />
+        <Menu />
+        <div className="app-content">
+          <Route exact path="/" component={Home} />
+          <Route path="/education" component={Education} />
+        </div>
       </div>
-    </div>
-  </HashRouter>
-));
+    </HashRouter>
+  );
+});

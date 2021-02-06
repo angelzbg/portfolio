@@ -3,10 +3,10 @@ import './styles/education.css';
 import { Link2 } from 'react-feather';
 import { softuni } from './data';
 
-const pu_logo = require('../../images/pu_logo.png');
-const softuni_logo = require('../../images/softuni_logo.png');
+import pu_logo from '../../images/pu_logo.png';
+import softuni_logo from '../../images/softuni_logo.png';
 
-export default () => {
+const Education = () => {
   const [certificatesPopUps, setSertificatesPopUps] = useState({} as { [key: string]: boolean });
 
   const dots = new Array(softuni.length).fill(0).map((_, i) => <div className="dot" key={`dot-${i}`} />);
@@ -73,7 +73,10 @@ export default () => {
           <Link2 className="link-icon" />
           Informatics - 2016/2019
         </a>
+        <div style={{ height: '1rem' }} />
       </div>
     </center>
   );
 };
+
+export default Education;

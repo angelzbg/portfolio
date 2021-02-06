@@ -5,18 +5,13 @@ import { setColorScheme } from '../../utils/themes';
 import { Home, BookOpen, FileText, Settings, Moon, Sun, Coffee } from 'react-feather';
 import Articles from '../articles/Articles';
 import { withRouter } from 'react-router-dom';
-import { INextTheme, ISetBlur } from '../../state/Store';
+import { useStore } from '../../state/state';
 import { RouteComponentProps } from 'react-router';
 import { contacts } from './data';
 
-type MenuProps = RouteComponentProps & {
-  theme: string;
-  nextTheme: INextTheme;
-  setBlurred: ISetBlur;
-};
-
 export default observer(
-  withRouter(({ theme, nextTheme, setBlurred, location: { pathname } }: MenuProps) => {
+  withRouter(({ location: { pathname } }: RouteComponentProps) => {
+    const store = useStore();
     const [dropdown, setDropdown] = useState('');
     const [tip, setTip] = useState('');
     const [isBlur, setBlur] = useState(false);
@@ -28,24 +23,22 @@ export default observer(
         setBlurTop(document.querySelector('.app-wrapper')!.scrollTop);
         setDropdown(tip);
         setBlur(true);
-        setBlurred(true);
+        store.setBlur(true);
       } else {
         setDropdown('');
         setBlur(false);
-        setBlurred(false);
+        store.setBlur(false);
       }
-    }, [tip, dropdown, setBlurred]);
+    }, [tip, dropdown, store]);
 
     useEffect(() => {
       if (blurProf) {
         setBlurTop(document.querySelector('.app-wrapper')!.scrollTop);
-        setBlurred(true);
+        store.setBlur(true);
       } else {
-        setBlurred(false);
+        store.setBlur(false);
       }
-    }, [blurProf, setBlurred]);
-
-    useEffect(() => {}, []);
+    }, [blurProf, store]);
 
     return (
       <div className="profile">
@@ -134,7 +127,7 @@ export default observer(
               }
             />
             <div className="dropdown-menu-wrapper themes" style={{ display: dropdown === 'Themes' ? 'block' : 'none' }}>
-              <div className="dropdown-menu-wrap themes" onMouseLeave={() => nextTheme(theme)}>
+              <div className="dropdown-menu-wrap themes" onMouseLeave={() => store.nextTheme(store.theme)}>
                 {[
                   { name: 'Dark', icon: () => <Moon className="icon-dropdown" /> },
                   { name: 'Light', icon: () => <Sun className="icon-dropdown" /> },
@@ -145,7 +138,7 @@ export default observer(
                     className="theme-drop"
                     onMouseEnter={() => setColorScheme(name)}
                     onClick={() => {
-                      nextTheme(name);
+                      store.nextTheme(name);
                       setTip('');
                     }}
                   >
