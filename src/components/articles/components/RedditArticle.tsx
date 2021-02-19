@@ -13,7 +13,7 @@ const RedditArticle = ({ url }: { url: string }) => {
 
   useEffect(() => {
     let isMounted = true;
-    fetch(`https://cors-anywhere.herokuapp.com/${url}.json?`)
+    fetch(`${url}.json?`)
       .then((res) => res.json())
       .then((res) => {
         const { title, subreddit, author, created_utc, ups, num_comments } = res[0].data.children[0].data;

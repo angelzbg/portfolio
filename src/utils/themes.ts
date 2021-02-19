@@ -17,7 +17,7 @@ const colors: IColor = {
     '--shadow2': 'rgba(0, 0, 0, 0.1)',
     '--blur': 'rgba(24, 25, 26, 0.6)',
     '--active': 'rgba(61, 174, 255, 1)',
-    '--active-bgr': 'rgba(61, 174, 255, 0.5)',
+    '--active-bgr': 'rgba(61, 174, 255, 0.1)',
   },
   Light: {
     '--lightest': '#ffffff',
@@ -31,7 +31,7 @@ const colors: IColor = {
     '--shadow2': 'rgba(0, 0, 0, 0.1)',
     '--blur': 'rgba(59, 89, 152, 0.6)',
     '--active': 'rgba(255, 255, 255, 1)',
-    '--active-bgr': 'rgba(255, 255, 255, 0.6)',
+    '--active-bgr': 'rgba(255, 255, 255, 0.2)',
   },
   Coffee: {
     '--lightest': '#ece0d1',
@@ -45,7 +45,7 @@ const colors: IColor = {
     '--shadow2': 'rgba(0, 0, 0, 0.1)',
     '--blur': 'rgba(56, 34, 15, 0.6)',
     '--active': 'rgba(255, 255, 255, 1)',
-    '--active-bgr': 'rgba(255, 255, 255, 0.6)',
+    '--active-bgr': 'rgba(255, 255, 255, 0.2)',
   },
 };
 

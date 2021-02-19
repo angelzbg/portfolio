@@ -46,8 +46,8 @@ export default observer(
           <div className="prof-img" />
 
           <div className="prof-info">
-            <div className="dev">Web Developer</div>
             <div className="name">Angel Zlatanov</div>
+            <div className="dev">Web Developer</div>
             <div className="separator" />
             <div className="contacts-wrap">
               {contacts.map(({ href, ext }, i) => (
@@ -64,15 +64,8 @@ export default observer(
         <div className="menu-wrapper" onMouseLeave={() => setTip('')}>
           <a href="#/">
             <Home
-              //tip="Home"
               className={`icon-menu${pathname === '/' && (!tip || tip === 'Home') ? ' active' : ''}`}
-              style={
-                tip === 'Home'
-                  ? {
-                      /*padding: '0.05rem'*/
-                    }
-                  : { ...{ zIndex: dropdown ? 2 : 0 } }
-              }
+              style={tip === 'Home' ? {} : { zIndex: dropdown ? 2 : 0 }}
               onClick={() => setTip('')}
               onMouseEnter={() => setTip('Home')}
               onMouseLeave={() => setTip('')}
@@ -80,15 +73,8 @@ export default observer(
           </a>
           <a href="#/education">
             <BookOpen
-              //tip="Education"
               className={`icon-menu${pathname === '/education' && (!tip || tip === 'Education') ? ' active' : ''}`}
-              style={
-                tip === 'Education'
-                  ? {
-                      /*padding: '0.05rem'*/
-                    }
-                  : { ...{ zIndex: dropdown ? 2 : 0 } }
-              }
+              style={tip === 'Education' ? {} : { zIndex: dropdown ? 2 : 0 }}
               onClick={() => setTip('')}
               onMouseEnter={() => setTip('Education')}
               onMouseLeave={() => setTip('')}
@@ -101,12 +87,11 @@ export default observer(
           >
             <FileText
               onClick={() => setTip('Articles')}
-              //tip="Articles"
               className="icon-menu"
               style={
                 tip === 'Articles'
                   ? { backgroundColor: 'var(--medium)', color: 'var(--lightest)', zIndex: 2 }
-                  : { ...{ zIndex: dropdown ? 2 : 0 } }
+                  : { zIndex: dropdown ? 2 : 0 }
               }
             />
             <Articles isOpen={dropdown === 'Articles'} />
@@ -118,12 +103,11 @@ export default observer(
           >
             <Settings
               onClick={() => setTip('Themes')}
-              //tip="Themes"
               className="icon-menu"
               style={
                 tip === 'Themes'
                   ? { backgroundColor: 'var(--medium)', color: 'var(--lightest)', zIndex: 2 }
-                  : { ...{ zIndex: dropdown ? 2 : 0 } }
+                  : { zIndex: dropdown ? 2 : 0 }
               }
             />
             <div className="dropdown-menu-wrapper themes" style={{ display: dropdown === 'Themes' ? 'block' : 'none' }}>

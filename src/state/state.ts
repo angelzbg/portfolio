@@ -11,6 +11,11 @@ const store = {
 
   isBlur: false,
   setBlur: (value: boolean) => (store.isBlur = value),
+
+  certificatesPopUps: {} as { [key: string]: boolean },
+  openCertificatePopUp: (certName: string) => {
+    store.certificatesPopUps[certName] = true;
+  },
 };
 
 makeAutoObservable(store);

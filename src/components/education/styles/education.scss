@@ -237,7 +237,10 @@
   border-radius: 0.4rem;
   margin-top: 1rem;
   font-size: 13px;
-  animation: softuni-main-link-opacity 1s ease-out;
+  opacity: 0;
+  animation: softuni-main-link-opacity 1.5s ease-out forwards;
+  animation-delay: 0.5s;
+  pointer-events: auto;
   img {
     display: block;
     width: 180px;
@@ -280,6 +283,7 @@
     display: block;
     width: 80px;
     animation: softuni-main-link-opacity 0.2s ease-out;
+    pointer-events: auto;
     .education-softuni {
       width: 80px;
       height: 80px;
@@ -332,6 +336,19 @@
       width: 200px;
       margin-top: 20px;
       margin-bottom: 20px;
+      .softuni-card {
+        .softuni-info {
+          div:nth-child(2) {
+            pointer-events: auto;
+          }
+        }
+        .softuni-cert-link-wrap {
+          pointer-events: auto;
+        }
+        .softuni-sertificate-card {
+          pointer-events: auto;
+        }
+      }
     }
     .softuni-left {
       .softuni-card {

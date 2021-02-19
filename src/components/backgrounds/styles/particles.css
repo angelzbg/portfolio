@@ -1,0 +1,10 @@
+.area-particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100vw - 0.25rem);
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+}
+/*# sourceMappingURL=particles.css.map */

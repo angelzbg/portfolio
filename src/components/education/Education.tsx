@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './styles/education.css';
 import { Link2 } from 'react-feather';
 import { softuni } from './data';
+import { useStore } from '../../state/state';
+import { observer } from 'mobx-react';
 
 import pu_logo from '../../images/pu_logo.png';
 import softuni_logo from '../../images/softuni_logo.png';
 
-const Education = () => {
-  const [certificatesPopUps, setSertificatesPopUps] = useState({} as { [key: string]: boolean });
+const Education = observer(() => {
+  const store = useStore();
 
   const dots = new Array(softuni.length).fill(0).map((_, i) => <div className="dot" key={`dot-${i}`} />);
 
@@ -33,11 +35,11 @@ const Education = () => {
               className="softuni-sertificate-card"
               src={certificate.image}
               alt={certificate.alt}
-              onMouseEnter={() => setSertificatesPopUps((prev) => ({ ...prev, [name]: true }))}
-              style={certificatesPopUps[name] ? { height: 30, marginTop: 50 } : {}}
+              onMouseEnter={() => store.openCertificatePopUp(name)}
+              style={store.certificatesPopUps[name] ? { height: 30, marginTop: 50 } : {}}
             />
           )}
-          {certificate && certificatesPopUps[name] && (
+          {certificate && store.certificatesPopUps[name] && (
             <a href={certificate.link} target="_blank" rel="noopener noreferrer" className="softuni-cert-link-wrap">
               <div>{`/details/${certificate.link.split('details/').pop()}`}</div>
               <div>
@@ -77,6 +79,6 @@ const Education = () => {
       </div>
     </center>
   );
-};
+});
 
 export default Education;

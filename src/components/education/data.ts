@@ -11,13 +11,37 @@ import cert_mini_softuni_basics from '../../images/cert_mini_softuni_basics.png'
 import cert_mini_softuni_fundamentals from '../../images/cert_mini_softuni_fundamentals.png';
 import cert_mini_softuni_advanced from '../../images/cert_mini_softuni_advanced.png';
 
-export interface ISoftuniIcon {
+interface ISoftuniIcon {
   icon: any;
   title: string;
   alt: string;
 }
 
-export const icons: { [key: string]: ISoftuniIcon } = {
+interface ISoftuniCourse {
+  name: string;
+  date: string;
+  grade: string;
+  certificate?: {
+    image: any;
+    link: string;
+    alt: string;
+  };
+  icons?: ISoftuniIcon[];
+}
+
+const iconKeys = [
+  'nodejs',
+  'javascript',
+  'css',
+  'html',
+  'github',
+  'firebase',
+  'express',
+  'mongodb',
+  'reactjs',
+] as const;
+
+export const icons: { [key in typeof iconKeys[number]]: ISoftuniIcon } = {
   nodejs: {
     icon: icon_nodejs,
     title: 'NodeJS',
@@ -64,18 +88,6 @@ export const icons: { [key: string]: ISoftuniIcon } = {
     alt: 'reactjs icon',
   },
 };
-
-export interface ISoftuniCourse {
-  name: string;
-  date: string;
-  grade: string;
-  certificate?: {
-    image: any;
-    link: string;
-    alt: string;
-  };
-  icons?: ISoftuniIcon[];
-}
 
 export const softuni: ISoftuniCourse[] = [
   {

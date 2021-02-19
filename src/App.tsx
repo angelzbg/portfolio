@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashRouter, Route } from 'react-router-dom';
 import './styles/app.css';
-import FormsBackground from './components/backgrounds/FormsBackground';
+import ParticlesBackground from './components/backgrounds/ParticlesBackground';
 import Menu from './components/menu/Menu';
 import Home from './components/home/Home';
 import Education from './components/education/Education';
@@ -22,7 +22,7 @@ export default observer(() => {
   return (
     <HashRouter>
       <div className="app-wrapper" style={store.isBlur ? { overflow: 'hidden', paddingRight: '0.25rem' } : {}}>
-        <FormsBackground count={10} />
+        <ParticlesBackground />
         <Menu />
         <div className="app-content">
           <Route exact path="/" component={Home} />
