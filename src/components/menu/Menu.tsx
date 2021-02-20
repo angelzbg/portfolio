@@ -65,7 +65,8 @@ export default observer(
           <a
             href="#/"
             className={`icon-menu${pathname === '/' && (!tip || tip === 'Home') ? ' active' : ''}`}
-            style={tip === 'Home' ? {} : { zIndex: dropdown ? 2 : 0 }}
+            //style={tip === 'Home' ? {} : { zIndex: dropdown ? 2 : 0 }}
+            style={tip && dropdown ? { zIndex: 2 } : {}}
             onClick={() => setTip('')}
             onMouseEnter={() => setTip('Home')}
             onMouseLeave={() => setTip('')}
@@ -75,7 +76,8 @@ export default observer(
           <a
             href="#/education"
             className={`icon-menu${pathname === '/education' && (!tip || tip === 'Education') ? ' active' : ''}`}
-            style={tip === 'Education' ? {} : { zIndex: dropdown ? 2 : 0 }}
+            //style={tip === 'Education' ? {} : { zIndex: dropdown ? 2 : 0 }}
+            style={tip && dropdown ? { zIndex: 2 } : {}}
             onClick={() => setTip('')}
             onMouseEnter={() => setTip('Education')}
             onMouseLeave={() => setTip('')}
@@ -83,10 +85,9 @@ export default observer(
             <BookOpen />
           </a>
           <div
-            //style={{ display: 'inline-block', borderRadius: '50%' }}
-            onClick={() => setTip('Articles')}
             onMouseEnter={() => setTip('Articles')}
             onMouseLeave={() => setTip('')}
+            onClick={() => setTip('Articles')}
             className="icon-menu"
             style={
               tip === 'Articles'
@@ -98,7 +99,6 @@ export default observer(
             <Articles isOpen={dropdown === 'Articles'} />
           </div>
           <div
-            //style={{ display: 'inline-block', borderRadius: '50%' }}
             onMouseEnter={() => setTip('Themes')}
             onMouseLeave={() => setTip('')}
             onClick={() => setTip('Themes')}
