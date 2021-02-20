@@ -478,7 +478,6 @@
   width: max-content;
   z-index: 2;
   border-top-left-radius: 80% !important;
-  background-color: bisque;
 }
 
 .dropdown-menu-wrapper.themes {
