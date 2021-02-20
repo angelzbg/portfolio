@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { vmin } from '../../utils/utils';
 import Particles from 'react-particles-js';
 import './styles/particles.css';

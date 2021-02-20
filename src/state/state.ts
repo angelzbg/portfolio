@@ -16,6 +16,9 @@ const store = {
   openCertificatePopUp: (certName: string) => {
     store.certificatesPopUps[certName] = true;
   },
+
+  bofeHover: -1,
+  setBofeHover: (idx: number) => (store.bofeHover = idx),
 };
 
 makeAutoObservable(store);

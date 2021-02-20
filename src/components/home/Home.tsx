@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import { observer } from 'mobx-react';
+import { useStore } from '../../state/state';
 import './styles/home.css';
 import devData from './data';
-const details = devData.details.slice().reverse();
+const { details } = devData;
 
-const Home = () => {
-  const [bofeHover, setBofeHover] = useState(-1);
+const Home = observer(() => {
+  const store = useStore();
   return (
     <center>
       <div className="home-wrapper">
@@ -20,29 +21,28 @@ const Home = () => {
         </div>
         <br />
         <div className="home-data-wrapper">
-          <div className="home-menu" onMouseLeave={() => setBofeHover(-1)}>
+          <div className="home-menu">
             {details.map(({ title, information }, i) => (
               <div
                 key={`home-menu-item-${i}`}
-                className={bofeHover === i ? 'home-menu-item-hovered' : 'home-menu-item'}
-                onMouseEnter={() => setBofeHover(i)}
-                onMouseLeave={() => setBofeHover(-1)}
+                className={store.bofeHover === i ? 'home-menu-item-hovered' : 'home-menu-item'}
+                onClick={() => store.setBofeHover(i)}
                 style={
                   i === 0
                     ? {
                         borderTopLeftRadius: 15,
                         borderTopRightRadius: 15,
-                        ...(i === bofeHover - 1 ? { borderBottom: 'none' } : {}),
+                        ...(i === store.bofeHover - 1 ? { borderBottom: 'none' } : {}),
                       }
                     : i === details.length - 1
                     ? { borderBottomLeftRadius: 15, borderBottomRightRadius: 15 }
-                    : i === bofeHover - 1
+                    : i === store.bofeHover - 1
                     ? { borderBottom: 'none' }
                     : {}
                 }
               >
                 {title}
-                {bofeHover === i && <div className="home-info">{information}</div>}
+                {store.bofeHover === i && <div className="home-info">{information}</div>}
               </div>
             ))}
           </div>
@@ -50,6 +50,6 @@ const Home = () => {
       </div>
     </center>
   );
-};
+});
 
 export default Home;

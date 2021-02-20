@@ -125,7 +125,6 @@
   font-size: 1rem !important;
   .home-menu {
     pointer-events: auto;
-    cursor: default;
     font-size: 1rem !important;
     .home-menu-item {
       font-size: 1rem !important;
@@ -137,11 +136,13 @@
       border-bottom: 1px solid var(--darker);
       text-shadow: 1px 2px 4px var(--darker), 0px -2px 5px var(--darker);
       z-index: 1;
+      cursor: pointer;
       &:last-child {
         border-bottom: none;
       }
     }
     .home-menu-item-hovered {
+      cursor: default;
       font-size: 1rem !important;
       width: 500px;
       height: max-content;

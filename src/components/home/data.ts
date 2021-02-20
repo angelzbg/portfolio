@@ -6,27 +6,13 @@ const devData: {
 } = {
   details: [
     {
-      title: 'Wiring up and integrating data sources, services, and APIs.',
+      title: 'Consuming the UI code',
       information:
-        'This can include things like retrieving, manipulating, and displaying content from a CMS, or posting data to the appropriate service when a user submits a form.',
+        'authored by the front-of-the-front-end developers in order to compose screens and connect real functionality data, and services.',
     },
     {
-      title: 'Architecting and managing JavaScript-based infrastructure',
-      information: 'such as Node frameworks, tools, and services.',
-    },
-    {
-      title: 'Optimizing the performance of JavaScript code',
-      information: 'in order to create a snappy, responsive application that fetches and fetches/posts data quickly.',
-    },
-    {
-      title: 'Working with other backend developers and IT',
-      information:
-        'to ensure the right technical infrastructure is in place and that the application is able to properly integrate/communicate with non-JavaScript backend code.',
-    },
-    {
-      title: 'Working with front of the front end developers',
-      information:
-        'to ensure the UI component library contains all the components, variants, and API hooks necessary in order to build the application and all its states.',
+      title: 'Working with the product team',
+      information: 'to ensure all product states are accurately represented in the living, breathing application.',
     },
     {
       title: 'Writing application business logic',
@@ -34,13 +20,27 @@ const devData: {
         'to handle things like CRUD functionality and to control application state, routing, cache, authentication, etc. - write the code necessary for the application to function properly.',
     },
     {
-      title: 'Working with the product team',
-      information: 'to ensure all product states are accurately represented in the living, breathing application.',
+      title: 'Working with front of the front end developers',
+      information:
+        'to ensure the UI component library contains all the components, variants, and API hooks necessary in order to build the application and all its states.',
     },
     {
-      title: 'Consuming the UI code',
+      title: 'Working with other backend developers and IT',
       information:
-        'authored by the front-of-the-front-end developers in order to compose screens and connect real functionality data, and services.',
+        'to ensure the right technical infrastructure is in place and that the application is able to properly integrate/communicate with non-JavaScript backend code.',
+    },
+    {
+      title: 'Optimizing the performance of JavaScript code',
+      information: 'in order to create a snappy, responsive application that fetches and fetches/posts data quickly.',
+    },
+    {
+      title: 'Architecting and managing JavaScript-based infrastructure',
+      information: 'such as Node frameworks, tools, and services.',
+    },
+    {
+      title: 'Wiring up and integrating data sources, services, and APIs.',
+      information:
+        'This can include things like retrieving, manipulating, and displaying content from a CMS, or posting data to the appropriate service when a user submits a form.',
     },
     /*{
       title: 'Writing end-to-end, integration, and other tests',
