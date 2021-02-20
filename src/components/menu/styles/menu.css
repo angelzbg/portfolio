@@ -478,11 +478,12 @@
   width: max-content;
   z-index: 2;
   border-top-left-radius: 80% !important;
+  background-color: bisque;
 }
 
 .dropdown-menu-wrapper.themes {
-  border-top-left-radius: 30%;
-  border-top-right-radius: 30%;
+  border-top-left-radius: 30% !important;
+  border-top-right-radius: 30% !important;
   -webkit-animation: dropdown-keyframe-themes 0.2s ease-out;
           animation: dropdown-keyframe-themes 0.2s ease-out;
   left: -110% !important;
