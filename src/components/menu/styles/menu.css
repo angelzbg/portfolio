@@ -525,6 +525,7 @@
 .dropdown-menu-wrap div.theme-drop .icon-dropdown {
   width: 1rem;
   height: 1rem;
+  margin: 0;
   margin-right: 0.4rem;
 }
 /*# sourceMappingURL=menu.css.map */

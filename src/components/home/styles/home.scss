@@ -122,11 +122,13 @@
 .home-data-wrapper {
   width: 500px;
   background-color: transparent;
-  font-size: 16px !important;
+  font-size: 1rem !important;
   .home-menu {
     pointer-events: auto;
     cursor: default;
-    .menu-item {
+    font-size: 1rem !important;
+    .home-menu-item {
+      font-size: 1rem !important;
       width: 460px;
       height: 40px;
       line-height: 40px;
@@ -139,7 +141,8 @@
         border-bottom: none;
       }
     }
-    .menu-item-hovered {
+    .home-menu-item-hovered {
+      font-size: 1rem !important;
       width: 500px;
       height: max-content;
       line-height: 40px;
@@ -148,7 +151,8 @@
       border-radius: 25px !important;
       z-index: 2;
       text-shadow: 1px 2px 4px var(--dark), 0px -2px 5px var(--dark);
-      div.info {
+      div.home-info {
+        font-size: 1rem !important;
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom: 15px;

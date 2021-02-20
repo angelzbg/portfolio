@@ -87,7 +87,6 @@ export default observer(
           <div
             onMouseEnter={() => setTip('Articles')}
             onMouseLeave={() => setTip('')}
-            onClick={() => setTip('Articles')}
             className="icon-menu"
             style={
               tip === 'Articles'
@@ -95,13 +94,12 @@ export default observer(
                 : { zIndex: dropdown ? 2 : 0 }
             }
           >
-            <FileText />
+            <FileText onClick={() => setTip('Articles')} />
             <Articles isOpen={dropdown === 'Articles'} />
           </div>
           <div
             onMouseEnter={() => setTip('Themes')}
             onMouseLeave={() => setTip('')}
-            onClick={() => setTip('Themes')}
             className="icon-menu"
             style={
               tip === 'Themes'
@@ -109,31 +107,31 @@ export default observer(
                 : { zIndex: dropdown ? 2 : 0 }
             }
           >
-            <Settings />
-            <div className="dropdown-menu-wrapper themes" style={{ display: dropdown === 'Themes' ? 'block' : 'none' }}>
-              <div className="dropdown-menu-wrap themes" onMouseLeave={() => store.nextTheme(store.theme)}>
-                {[
-                  { name: 'Dark', icon: () => <Moon className="icon-dropdown" /> },
-                  { name: 'Light', icon: () => <Sun className="icon-dropdown" /> },
-                  { name: 'Coffee', icon: () => <Coffee className="icon-dropdown" /> },
-                ].map(({ name, icon }) => (
-                  <div
-                    key={`theme-${name}`}
-                    className="theme-drop"
-                    onMouseEnter={() => setColorScheme(name)}
-                    onClick={() => {
-                      store.nextTheme(name);
-                      setTip('');
-                      // TO DO Check why useEffect on setTip('') isn't hiding the dropdown menu
-                      setDropdown('');
-                    }}
-                  >
-                    {icon()}
-                    {name}
-                  </div>
-                ))}
+            <Settings onClick={() => setTip('Themes')} />
+            {dropdown === 'Themes' && (
+              <div className="dropdown-menu-wrapper themes">
+                <div className="dropdown-menu-wrap themes" onMouseLeave={() => store.nextTheme(store.theme)}>
+                  {[
+                    { name: 'Dark', icon: () => <Moon className="icon-dropdown" /> },
+                    { name: 'Light', icon: () => <Sun className="icon-dropdown" /> },
+                    { name: 'Coffee', icon: () => <Coffee className="icon-dropdown" /> },
+                  ].map(({ name, icon }) => (
+                    <div
+                      key={`theme-${name}`}
+                      className="theme-drop"
+                      onMouseEnter={() => setColorScheme(name)}
+                      onClick={() => {
+                        store.nextTheme(name);
+                        setTip('');
+                      }}
+                    >
+                      {icon()}
+                      {name}
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
           </div>
           {isBlur && <div className="blur" style={{ top: `calc(-100px - 1.5rem + ${blurTop}px)` }} />}
         </div>

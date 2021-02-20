@@ -23,7 +23,8 @@ const Home = () => {
           <div className="home-menu" onMouseLeave={() => setBofeHover(-1)}>
             {details.map(({ title, information }, i) => (
               <div
-                className={bofeHover === i ? 'menu-item-hovered' : 'menu-item'}
+                key={`home-menu-item-${i}`}
+                className={bofeHover === i ? 'home-menu-item-hovered' : 'home-menu-item'}
                 onMouseEnter={() => setBofeHover(i)}
                 onMouseLeave={() => setBofeHover(-1)}
                 style={
@@ -41,7 +42,7 @@ const Home = () => {
                 }
               >
                 {title}
-                {bofeHover === i && <div className="info">{information}</div>}
+                {bofeHover === i && <div className="home-info">{information}</div>}
               </div>
             ))}
           </div>

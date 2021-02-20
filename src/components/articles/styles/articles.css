@@ -118,6 +118,7 @@
 .articles-dropdown-wrapper .articles-dropdown-menu-wrap .articles .article a .article-wrap .reddit-article-info .reddit-mini-icon {
   width: 0.8rem;
   height: 0.8rem;
+  margin: 0;
   margin-bottom: 0.1rem;
 }
 /*# sourceMappingURL=articles.css.map */
