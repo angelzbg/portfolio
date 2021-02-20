@@ -124,6 +124,8 @@ export default observer(
                     onClick={() => {
                       store.nextTheme(name);
                       setTip('');
+                      // TO DO Check why useEffect on setTip('') isn't hiding the dropdown menu
+                      setDropdown('');
                     }}
                   >
                     {icon()}
