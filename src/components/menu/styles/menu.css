@@ -330,8 +330,12 @@
 }
 
 .menu-wrapper {
-  width: -webkit-max-content;
+  width: intrinsic;
+  /* Safari/WebKit uses a non-standard name */
   width: -moz-max-content;
+  /* Firefox/Gecko */
+  width: -webkit-max-content;
+  /* Chrome */
   width: max-content;
   padding: 0.35rem 0.35rem;
   background-color: var(--dark);
@@ -345,6 +349,8 @@
   /*-webkit-box-shadow: 0 1px 4px var(--shadow1), 0 0 40px var(--shadow2);
   -moz-box-shadow: 0 1px 4px var(--shadow1), 0 0 40px var(--shadow2);
   box-shadow: 0 1px 4px var(--shadow1), 0 0 40px var(--shadow2);*/
+  width: 158.38px;
+  height: 47.98px;
 }
 
 .menu-wrapper:hover {
@@ -371,12 +377,18 @@
   display: inline-block;
   width: 2.3rem;
   height: 2.3rem;
-  padding: 0.5rem;
   cursor: pointer;
   overflow: visible;
   color: var(--light);
   border-radius: 50%;
   position: relative;
+}
+
+.icon-menu svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .icon-menu:hover {

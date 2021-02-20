@@ -62,54 +62,54 @@ export default observer(
 
         {tip && <div className="menu-icon-tip">{tip}</div>}
         <div className="menu-wrapper" onMouseLeave={() => setTip('')}>
-          <a href="#/">
-            <Home
-              className={`icon-menu${pathname === '/' && (!tip || tip === 'Home') ? ' active' : ''}`}
-              style={tip === 'Home' ? {} : { zIndex: dropdown ? 2 : 0 }}
-              onClick={() => setTip('')}
-              onMouseEnter={() => setTip('Home')}
-              onMouseLeave={() => setTip('')}
-            />
-          </a>
-          <a href="#/education">
-            <BookOpen
-              className={`icon-menu${pathname === '/education' && (!tip || tip === 'Education') ? ' active' : ''}`}
-              style={tip === 'Education' ? {} : { zIndex: dropdown ? 2 : 0 }}
-              onClick={() => setTip('')}
-              onMouseEnter={() => setTip('Education')}
-              onMouseLeave={() => setTip('')}
-            />
-          </a>
-          <div
-            style={{ display: 'inline-block', borderRadius: '50%' }}
-            onMouseEnter={() => setTip('Articles')}
+          <a
+            href="#/"
+            className={`icon-menu${pathname === '/' && (!tip || tip === 'Home') ? ' active' : ''}`}
+            style={tip === 'Home' ? {} : { zIndex: dropdown ? 2 : 0 }}
+            onClick={() => setTip('')}
+            onMouseEnter={() => setTip('Home')}
             onMouseLeave={() => setTip('')}
           >
-            <FileText
-              onClick={() => setTip('Articles')}
-              className="icon-menu"
-              style={
-                tip === 'Articles'
-                  ? { backgroundColor: 'var(--medium)', color: 'var(--lightest)', zIndex: 2 }
-                  : { zIndex: dropdown ? 2 : 0 }
-              }
-            />
+            <Home />
+          </a>
+          <a
+            href="#/education"
+            className={`icon-menu${pathname === '/education' && (!tip || tip === 'Education') ? ' active' : ''}`}
+            style={tip === 'Education' ? {} : { zIndex: dropdown ? 2 : 0 }}
+            onClick={() => setTip('')}
+            onMouseEnter={() => setTip('Education')}
+            onMouseLeave={() => setTip('')}
+          >
+            <BookOpen />
+          </a>
+          <div
+            //style={{ display: 'inline-block', borderRadius: '50%' }}
+            onClick={() => setTip('Articles')}
+            onMouseEnter={() => setTip('Articles')}
+            onMouseLeave={() => setTip('')}
+            className="icon-menu"
+            style={
+              tip === 'Articles'
+                ? { backgroundColor: 'var(--medium)', color: 'var(--lightest)', zIndex: 2 }
+                : { zIndex: dropdown ? 2 : 0 }
+            }
+          >
+            <FileText />
             <Articles isOpen={dropdown === 'Articles'} />
           </div>
           <div
-            style={{ display: 'inline-block', borderRadius: '50%' }}
+            //style={{ display: 'inline-block', borderRadius: '50%' }}
             onMouseEnter={() => setTip('Themes')}
             onMouseLeave={() => setTip('')}
+            onClick={() => setTip('Themes')}
+            className="icon-menu"
+            style={
+              tip === 'Themes'
+                ? { backgroundColor: 'var(--medium)', color: 'var(--lightest)', zIndex: 2 }
+                : { zIndex: dropdown ? 2 : 0 }
+            }
           >
-            <Settings
-              onClick={() => setTip('Themes')}
-              className="icon-menu"
-              style={
-                tip === 'Themes'
-                  ? { backgroundColor: 'var(--medium)', color: 'var(--lightest)', zIndex: 2 }
-                  : { zIndex: dropdown ? 2 : 0 }
-              }
-            />
+            <Settings />
             <div className="dropdown-menu-wrapper themes" style={{ display: dropdown === 'Themes' ? 'block' : 'none' }}>
               <div className="dropdown-menu-wrap themes" onMouseLeave={() => store.nextTheme(store.theme)}>
                 {[
