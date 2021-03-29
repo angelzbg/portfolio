@@ -99,7 +99,12 @@ export const softuni: ISoftuniCourse[] = [
   {
     name: 'JS Back-End',
     date: 'January 2021',
-    grade: '?.??',
+    grade: '6.00',
+    certificate: {
+      image: cert_mini_softuni_advanced,
+      link: 'https://softuni.bg/certificates/details/100840/94bd248c',
+      alt: 'cert_mini_softuni_backend',
+    },
     icons: [icons.nodejs, icons.express, icons.mongodb],
   },
   {
@@ -107,9 +112,9 @@ export const softuni: ISoftuniCourse[] = [
     date: 'October 2020',
     grade: '6.00',
     certificate: {
-      image: cert_mini_softuni_advanced,
+      image: cert_mini_softuni_fundamentals,
       link: 'https://softuni.bg/certificates/details/95150/c625ecd8',
-      alt: 'cert_mini_softuni_advanced',
+      alt: 'cert_mini_softuni_applications',
     },
     icons: [icons.nodejs, icons.html, icons.css, icons.firebase],
   },
