@@ -93,8 +93,13 @@ export const softuni: ISoftuniCourse[] = [
   {
     name: 'ReactJS',
     date: 'March 2021',
-    grade: '?.??',
-    icons: [icons.reactjs],
+    grade: '6.00',
+    certificate: {
+      image: cert_mini_softuni_advanced,
+      link: 'https://softuni.bg/certificates/details/105638/a6244525',
+      alt: 'cert_mini_softuni_reactjs',
+    },
+    icons: [icons.reactjs, icons.nodejs, icons.express, icons.mongodb],
   },
   {
     name: 'JS Back-End',
