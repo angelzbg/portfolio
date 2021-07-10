@@ -91,6 +91,17 @@ export const icons: { [key in typeof iconKeys[number]]: ISoftuniIcon } = {
 
 export const softuni: ISoftuniCourse[] = [
   {
+    name: 'HTML & CSS',
+    date: 'May 2021',
+    grade: '6.00',
+    certificate: {
+      image: cert_mini_softuni_fundamentals,
+      link: 'https://softuni.bg/certificates/details/109008/6fb7932a',
+      alt: 'cert_mini_softuni_html_css',
+    },
+    icons: [icons.html, icons.css],
+  },
+  {
     name: 'ReactJS',
     date: 'March 2021',
     grade: '6.00',
@@ -106,7 +117,7 @@ export const softuni: ISoftuniCourse[] = [
     date: 'January 2021',
     grade: '6.00',
     certificate: {
-      image: cert_mini_softuni_advanced,
+      image: cert_mini_softuni_fundamentals,
       link: 'https://softuni.bg/certificates/details/100840/94bd248c',
       alt: 'cert_mini_softuni_backend',
     },
@@ -117,7 +128,7 @@ export const softuni: ISoftuniCourse[] = [
     date: 'October 2020',
     grade: '6.00',
     certificate: {
-      image: cert_mini_softuni_fundamentals,
+      image: cert_mini_softuni_advanced,
       link: 'https://softuni.bg/certificates/details/95150/c625ecd8',
       alt: 'cert_mini_softuni_applications',
     },
@@ -128,7 +139,7 @@ export const softuni: ISoftuniCourse[] = [
     date: 'September 2020',
     grade: '6.00',
     certificate: {
-      image: cert_mini_softuni_advanced,
+      image: cert_mini_softuni_fundamentals,
       link: 'https://softuni.bg/certificates/details/90498/96ede5a3',
       alt: 'cert_mini_softuni_advanced',
     },
@@ -139,7 +150,7 @@ export const softuni: ISoftuniCourse[] = [
     date: 'May 2020',
     grade: '6.00',
     certificate: {
-      image: cert_mini_softuni_fundamentals,
+      image: cert_mini_softuni_advanced,
       link: 'https://softuni.bg/certificates/details/85677/b698fe29',
       alt: 'cert_mini_softuni_fundamentals',
     },

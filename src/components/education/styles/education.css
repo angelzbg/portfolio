@@ -422,6 +422,26 @@
   height: 1rem;
 }
 
+.softuni-wrapper {
+  /*&:hover {
+    .softuni-cards {
+      .softuni-separator {
+        //background: linear-gradient(-90deg, #ffa000, #ffffff, #ffa000);
+        //background-size: 400% 400%;
+        //animation: gradient-softuni-separator 10s infinite;
+        .dot {
+          //background: linear-gradient(45deg, #808080, #234465, #808080);
+          //background-size: 400% 400%;
+          //animation: gradient-softuni-separator 5s infinite;
+          //-webkit-box-shadow: 0 1px 4px rgba(248, 158, 73, 0.4), 0 0 5px rgba(248, 158, 73, 0.4);
+          //-moz-box-shadow: 0 1px 4px rgba(248, 158, 73, 0.4), 0 0 5px rgba(248, 158, 73, 0.4);
+          //box-shadow: 0 1px 4px rgba(248, 158, 73, 0.4), 0 0 5px rgba(248, 158, 73, 0.4);
+        }
+      }
+    }
+  }*/
+}
+
 .softuni-wrapper .softuni-link {
   display: block;
   width: 80px;
@@ -556,6 +576,10 @@
 
 .softuni-wrapper .softuni-cards .softuni-left .softuni-card .softuni-cert-link-wrap div:nth-child(2) {
   float: left;
+}
+
+.softuni-wrapper .softuni-cards .softuni-right {
+  margin-bottom: 180px;
 }
 
 .softuni-wrapper .softuni-cards .softuni-right .softuni-card {

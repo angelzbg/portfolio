@@ -262,7 +262,7 @@
 }
 
 .softuni-wrapper {
-  &:hover {
+  /*&:hover {
     .softuni-cards {
       .softuni-separator {
         //background: linear-gradient(-90deg, #ffa000, #ffffff, #ffa000);
@@ -278,7 +278,7 @@
         }
       }
     }
-  }
+  }*/
   .softuni-link {
     display: block;
     width: 80px;
@@ -388,6 +388,7 @@
       }
     }
     .softuni-right {
+      margin-bottom: 180px; // quick bugfix watch out
       .softuni-card {
         margin-top: 80px;
         animation: expand-horizontal-softuni-card-right 0.4s linear;
