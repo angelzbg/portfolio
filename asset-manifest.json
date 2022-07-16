@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.52efb605.chunk.css",
-    "main.js": "/portfolio/static/js/main.9889bf8b.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.9889bf8b.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.f1eba1e3.chunk.css",
+    "main.js": "/portfolio/static/js/main.d1df00f5.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.d1df00f5.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.8fed2963.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.8fed2963.js.map",
     "static/css/2.658248ec.chunk.css": "/portfolio/static/css/2.658248ec.chunk.css",
-    "static/js/2.01b3e9e5.chunk.js": "/portfolio/static/js/2.01b3e9e5.chunk.js",
-    "static/js/2.01b3e9e5.chunk.js.map": "/portfolio/static/js/2.01b3e9e5.chunk.js.map",
+    "static/js/2.754dc0e1.chunk.js": "/portfolio/static/js/2.754dc0e1.chunk.js",
+    "static/js/2.754dc0e1.chunk.js.map": "/portfolio/static/js/2.754dc0e1.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.658248ec.chunk.css.map": "/portfolio/static/css/2.658248ec.chunk.css.map",
-    "static/css/main.52efb605.chunk.css.map": "/portfolio/static/css/main.52efb605.chunk.css.map",
-    "static/js/2.01b3e9e5.chunk.js.LICENSE.txt": "/portfolio/static/js/2.01b3e9e5.chunk.js.LICENSE.txt",
+    "static/css/main.f1eba1e3.chunk.css.map": "/portfolio/static/css/main.f1eba1e3.chunk.css.map",
+    "static/js/2.754dc0e1.chunk.js.LICENSE.txt": "/portfolio/static/js/2.754dc0e1.chunk.js.LICENSE.txt",
     "static/media/menu.css": "/portfolio/static/media/stackoverflow1.4bcbdfff.png",
     "static/media/icon_css.02d225c7.png": "/portfolio/static/media/icon_css.02d225c7.png",
     "static/media/icon_data.05015ddf.png": "/portfolio/static/media/icon_data.05015ddf.png",
@@ -26,16 +26,15 @@
     "static/media/icon_react.809fed23.png": "/portfolio/static/media/icon_react.809fed23.png",
     "static/media/icon_react1.63bacf65.png": "/portfolio/static/media/icon_react1.63bacf65.png",
     "static/media/icon_sass.91714f74.png": "/portfolio/static/media/icon_sass.91714f74.png",
-    "static/media/icon_typescript.8e08c216.png": "/portfolio/static/media/icon_typescript.8e08c216.png",
     "static/media/icon_vsc.942ebbc7.png": "/portfolio/static/media/icon_vsc.942ebbc7.png",
     "static/media/pu_logo.79cb4bb9.png": "/portfolio/static/media/pu_logo.79cb4bb9.png",
-    "static/media/softuni_logo.068ab3ea.png": "/portfolio/static/media/softuni_logo.068ab3ea.png"
+    "static/media/softuni_logo.82226036.png": "/portfolio/static/media/softuni_logo.82226036.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8fed2963.js",
     "static/css/2.658248ec.chunk.css",
-    "static/js/2.01b3e9e5.chunk.js",
-    "static/css/main.52efb605.chunk.css",
-    "static/js/main.9889bf8b.chunk.js"
+    "static/js/2.754dc0e1.chunk.js",
+    "static/css/main.f1eba1e3.chunk.css",
+    "static/js/main.d1df00f5.chunk.js"
   ]
 }
