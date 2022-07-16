@@ -59,8 +59,8 @@ const Education = observer(() => {
     <center>
       <div id="education">
         <div className="softuni-wrapper">
-          <a className="softuni-link" href="https://softuni.bg/" target="_blank" rel="noopener noreferrer">
-            <img className="education-softuni" src={softuni_logo} alt="softuni logo" />
+          <a className="softuni-link" href="https://softuni.bg/certificates/details/118752/0df98f96" target="_blank" rel="noopener noreferrer">
+            <img className="education-softuni" src={softuni_logo} alt="softuni diploma" />
           </a>
           <div className="softuni-cards">
             <div>

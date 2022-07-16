@@ -5,25 +5,27 @@ import './styles/particles.css';
 import { icons } from '../education/data';
 import icon_react1 from '../../images/icon_react1.png';
 import icon_data from '../../images/icon_data.png';
-import icon_typescript from '../../images/icon_typescript.png';
+//import icon_typescript from '../../images/icon_typescript.png';
 import icon_sass from '../../images/icon_sass.png';
 import icon_mobx from '../../images/icon_mobx.png';
 import icon_vsc from '../../images/icon_vsc.png';
 
-/*const fe_icons = Object.values([icons.css, icons.html, icons.javascript])
+const fe_icons = Object.values([icons.css, icons.html, icons.javascript, icons.firebase])
   .map(({ icon }) => icon)
-  .concat([icon_react1, icon_sass, icon_mobx, icon_vsc])
+  .concat([icon_react1, icon_sass, icon_react1, icon_mobx, icon_vsc])
   .map((src) => ({ src }));
 
 const be_icons = Object.values([icons.express, icons.mongodb, icons.nodejs])
   .map(({ icon }) => icon)
-  .concat([icon_typescript, icon_data])
-  .map((src) => ({ src }));*/
+  .concat([/*icon_typescript,*/ icon_data])
+  .map((src) => ({ src }));
 
-const allIcons = Object.values(icons)
+/*const allIcons = Object.values(icons)
   .map(({ icon }) => icon)
   .concat([icon_react1, icon_data, icon_typescript, icon_sass, icon_mobx, icon_vsc])
-  .map((src) => ({ src }));
+  .map((src) => ({ src }));*/
+
+const allIcons = [...fe_icons, ...be_icons];
 
 const getParticleSize = (p: number) => vmin(p);
 
