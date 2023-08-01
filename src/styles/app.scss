@@ -9,14 +9,14 @@
   /* width */
   &::-webkit-scrollbar {
     width: 0.25rem;
-    pointer-events: auto;
+    // pointer-events: auto;
   }
 
   /* Track */
   &::-webkit-scrollbar-track {
     border-radius: 0.4rem;
     background-color: var(--darker);
-    pointer-events: auto;
+    // pointer-events: auto;
     &:hover {
       background-color: var(--medium);
     }
@@ -26,7 +26,7 @@
   &::-webkit-scrollbar-thumb {
     background-color: var(--light);
     border-radius: 0.4rem;
-    pointer-events: auto;
+    // pointer-events: auto;
     &:hover {
       background-color: var(--lightest);
     }
@@ -74,7 +74,7 @@
   position: relative;
   z-index: 0;
   margin: 1rem;
-  pointer-events: none;
+  // pointer-events: none;
 }
 
 @media (min-width: 1921px) {

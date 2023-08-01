@@ -399,7 +399,7 @@
           animation: softuni-main-link-opacity 1.5s ease-out forwards;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
-  pointer-events: auto;
+  /* pointer-events: auto; */
 }
 
 .education-university img {
@@ -447,7 +447,7 @@
   width: 80px;
   -webkit-animation: softuni-main-link-opacity 0.2s ease-out;
           animation: softuni-main-link-opacity 0.2s ease-out;
-  pointer-events: auto;
+  /* pointer-events: auto; */
 }
 
 .softuni-wrapper .softuni-link .education-softuni {
@@ -521,17 +521,17 @@
 
 .softuni-wrapper .softuni-cards .softuni-left .softuni-card .softuni-info div:nth-child(2),
 .softuni-wrapper .softuni-cards .softuni-right .softuni-card .softuni-info div:nth-child(2) {
-  pointer-events: auto;
+  /* pointer-events: auto; */
 }
 
 .softuni-wrapper .softuni-cards .softuni-left .softuni-card .softuni-cert-link-wrap,
 .softuni-wrapper .softuni-cards .softuni-right .softuni-card .softuni-cert-link-wrap {
-  pointer-events: auto;
+  /* pointer-events: auto; */
 }
 
 .softuni-wrapper .softuni-cards .softuni-left .softuni-card .softuni-sertificate-card,
 .softuni-wrapper .softuni-cards .softuni-right .softuni-card .softuni-sertificate-card {
-  pointer-events: auto;
+  /* pointer-events: auto; */
 }
 
 .softuni-wrapper .softuni-cards .softuni-left .softuni-card {
