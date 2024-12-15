@@ -13,7 +13,11 @@ const Home = observer(() => {
           Plovdiv, Bulgaria
         </div>
         <div className="text-shadow" style={{ color: 'var(--light)', fontSize: '80%' }}>
-          *insert something boring here*
+          busyness !== importance
+          <br />
+          multitasking !== productivity
+          <br />
+          <button onClick={() => window.close()}>agree to disagree</button>
         </div>
         <br />
         <div className="text-shadow" style={{ color: 'var(--lightest)', fontSize: '105%' }}>
