@@ -2,25 +2,10 @@ import { observer } from 'mobx-react';
 import { useStore } from '../../state/state';
 import './styles/home.css';
 import devData from './data';
-import { useEffect } from 'react';
 const { details } = devData;
-
-declare global {
-  interface Window {
-    closeWindowSafely?: () => void;
-  }
-}
 
 const Home = observer(() => {
   const store = useStore();
-
-  useEffect(() => {
-    if (window.parent && window.parent !== window) {
-      window.parent.closeWindowSafely = function () {
-        window.close();
-      };
-    }
-  }, []);
 
   return (
     <center>
@@ -35,9 +20,7 @@ const Home = observer(() => {
           <br />
           <button
             onClick={() => {
-              if (window.parent.closeWindowSafely) {
-                window.parent.closeWindowSafely();
-              }
+              window.parent.postMessage('closeWindow', '*');
               window?.close();
             }}
           >
