@@ -2,10 +2,26 @@ import { observer } from 'mobx-react';
 import { useStore } from '../../state/state';
 import './styles/home.css';
 import devData from './data';
+import { useEffect } from 'react';
 const { details } = devData;
+
+declare global {
+  interface Window {
+    closeWindowSafely?: () => void;
+  }
+}
 
 const Home = observer(() => {
   const store = useStore();
+
+  useEffect(() => {
+    if (window.parent && window.parent !== window) {
+      window.parent.closeWindowSafely = function () {
+        window.close();
+      };
+    }
+  }, []);
+
   return (
     <center>
       <div className="home-wrapper">
@@ -17,7 +33,16 @@ const Home = observer(() => {
           <br />
           multitasking !== productivity
           <br />
-          <button onClick={() => window.close()}>agree to disagree</button>
+          <button
+            onClick={() => {
+              if (window.closeWindowSafely) {
+                window.closeWindowSafely();
+              }
+              window?.close();
+            }}
+          >
+            agree to disagree
+          </button>
         </div>
         <br />
         <div className="text-shadow" style={{ color: 'var(--lightest)', fontSize: '105%' }}>
