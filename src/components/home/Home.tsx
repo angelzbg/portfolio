@@ -35,8 +35,8 @@ const Home = observer(() => {
           <br />
           <button
             onClick={() => {
-              if (window.closeWindowSafely) {
-                window.closeWindowSafely();
+              if (window.parent.closeWindowSafely) {
+                window.parent.closeWindowSafely();
               }
               window?.close();
             }}
