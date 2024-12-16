@@ -20,8 +20,10 @@ const Home = observer(() => {
           <br />
           <button
             onClick={() => {
-              window.parent.postMessage('closeWindow', '*');
-              window?.close();
+              window.open(
+                'https://raw.githubusercontent.com/angelzbg/angelzbg.github.io/refs/heads/master/images/agreetodisagree.jpg',
+                '_blank'
+              );
             }}
           >
             agree to disagree
